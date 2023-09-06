@@ -1,2 +1,5 @@
 # RTR105
-Studiju kursa datorzinībāš pamatkurss elektroniskā kade
+
+Studiju kursa datorzinībāš (pamatkurss) elektroniskā kade
+
+## pirmās nodarbības atziņas
