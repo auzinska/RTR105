@@ -1,2 +1,2 @@
 # RTR105
-RTU studiju regists
+Studiju kursa datorzinībāš pamatkurss elektroniskā kade
