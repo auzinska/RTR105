@@ -24,17 +24,17 @@ Studiju kursa datorzinībāš (pamatkurss) elektroniskā kade
 <!-- Neredzams komentārs -->
 
 # 2. lekcija
-## man ls
-## ls -l
-## ls -l -t
-## home/user = ~
-## mkdir = uztaisa mapi
-## rmdir = izdzēst mapi
-## echo 12345 > a.txt txt faila izveide/papildinājums
-## hexdump -C a.txt parāda vērtības hexdec veidā
-## cat a.txt ir lasīt
-## echo 123123123 >> a.txt papildina iepriekšējo
-## man echo=manual
+<sub>man ls</sub>
+<sub>ls -l</sub> 
+#<sub>ls -l -t</sub>
+<sub>home/user = ~</sub>
+<sub>mkdir = uztaisa mapi</sub>
+<sub>rmdir = izdzēst mapi</sub>
+<sub>echo 12345 > a.txt txt faila izveide/papildinājums</sub>
+<sub>hexdump -C a.txt parāda vērtības hexdec veidā</sub>
+<sub>cat a.txt ir lasīt</sub>
+<sub>echo 123123123 >> a.txt papildina iepriekšējo</sub>
+<sub>man echo=manual</sub>
 <sub>history > history_20230913_class_02.txt</sub>
 <sub>find ./myfolder -mindepth 1 ! -regex '^./myfolder/test2\(/.*\)?' -delete</sub>   
 <sub>rm -d -- *[!0-9]</sub>
