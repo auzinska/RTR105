@@ -24,7 +24,7 @@ Studiju kursa datorzinībāš (pamatkurss) elektroniskā kade
 <!-- Neredzams komentārs -->
 
 # 2. lekcija
-<sub>man ls</sub>
+man ls
 <sub>ls -l</sub> 
 #<sub>ls -l -t</sub>
 <sub>home/user = ~</sub>
