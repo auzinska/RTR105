@@ -42,6 +42,12 @@ man ls
 <sub>mv DEF/hihi.dat DEF/hihihi.exe</sub>
 <sub>rm -r DEF</sub>
 
+
+<sub>
+diff history_20230913_class_02.txt history_20230913_class_03.txt > template.txt
+cat template.txt 
+</sub>
+
 ## Komandas
 <sub>nano mana_komanda_1.sh (aver teksta redaktoru scripta shell valodā)</sub>
 <sub>script =! kods</sub>
