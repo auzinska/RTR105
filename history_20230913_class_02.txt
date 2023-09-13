@@ -1,0 +1,34 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  cd /
+    4  pwd
+    5  cd ~
+    6  pqd
+    7  pwd
+    8  ls
+    9  mkdir ABC
+   10  ls -lt
+   11  ls -l ABC/
+   12  ls -la ABC/
+   13  rmdir ABC
+   14  ls -l ABC
+   15  echo $?
+   16  ls
+   17  echo $?
+   18  echo kkkkkkkkk
+   19  echo 12345 > a.txt
+   20  ls -lt
+   21  cat6 a.txt
+   22  cat a.txt
+   23  hexdump -C a.txt
+   24  echo abcdef >> a.txt
+   25  ls -lt * a.txt
+   26  cat a.txt
+   27  hexdump -C a.txt
+   28  man echo
+   29  echo -e "asdasd\a"
+   30  touch c.txt
+   31  man touch
+   32  touch 20231231 -t c.txt
+   33  history
+   34  history > history_20230913_class_02.txt
