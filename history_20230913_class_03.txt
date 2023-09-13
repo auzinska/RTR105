@@ -1,0 +1,51 @@
+34a35,84
+>    35  pwd
+>    36  find a.txt
+>    37  cd a.txt
+>    38  pwd
+>    39  man rmdir
+>    40  man r
+>    41  MAN RM
+>    42  man rm
+>    43  man del
+>    44  ls -lt *.txt
+>    45  ls -d -- *[!0-9].txt
+>    46  ls -lt
+>    47  ls -lt -d --*[!0-9].txt
+>    48  rm -d -- *[!0-9].txt
+>    49  ls -lt
+>    50  cp history_20230913_class_02.txt hihi.dat
+>    51  ls
+>    52  ls -lt
+>    53  mkdir DEF
+>    54  pwd
+>    55  ls
+>    56  mv hihi.dat ~/DEF/
+>    57  ls
+>    58  ls -lt DEF/
+>    59  MV DEF/hihi.dat DEF/hihihi.exe
+>    60  mv DEF/hihi.dat DEF/hihihi.exe
+>    61  ls -lt
+>    62  rmdir DEF/
+>    63  rm -r DEF/
+>    64  whereis ls
+>    65  echo $PATH
+>    66  ls -lt /bin/ls
+>    67  /bin/ls
+>    68  cat /bin/ls
+>    69  nano mana_komanda_1.sh
+>    70  cat mana_komanda_1
+>    71  cat mana_komanda_1.sh
+>    72  nano tiesibas.sh
+>    73  chmod 754 mana_komanda_1.sh 
+>    74  ls -lt
+>    75  PATH=$PATH:~
+>    76  cp mana_komanda_1.sh TEST/
+>    77  ls
+>    78  PATH=$PATH:~/TEST
+>    79  echo PATH
+>    80  echo $PATH
+>    81  nano TEST/mana_komanda_1.sh
+>    82  history
+>    83  cp mana_komanda_1.sh /TEST
+>    84  history > history_20230913_class_03.txt
