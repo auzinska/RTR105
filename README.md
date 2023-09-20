@@ -111,7 +111,7 @@ echo "manas 1.komandas izpilde ir pabeigta"
 
 <sub> history | grep clone</sub>
 
-<sub></sub>
+<sub>history -a</sub
 <sub></sub>
 <sub></sub>
 
