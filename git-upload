@@ -1,0 +1,7 @@
+#!/bin/bash
+git add .
+git config --global user.name auzinska
+git config --global user.email auzinska@gmail.com
+git commit -m "Class_04"
+git pull
+git push origin main

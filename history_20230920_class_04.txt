@@ -1,0 +1,30 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git --version
+    4  pwd
+    5  ls -lt
+    6  git clone https://github.com/auzinska/RTR105
+    7  LS -LT
+    8  ls -lt
+    9  ls -lt RTR105
+   10  rmdir RTR105
+   11  cd RTR105
+   12  pwd
+   13  ls-lt
+   14  ls -lt
+   15  ls -lta
+   16  cd .git
+   17  ls -lt
+   18  cat inde
+   19  cat index
+   20  cat config
+   21  cd ..
+   22  nano git-upload
+   23  ls -lt
+   24  cat git-uplaod
+   25  cat git-upload
+   26  chmod 754 git-upload
+   27  .git-upload
+   28  ls -lt
+   29  history
+   30  history > history_20230920_class_04.txt
