@@ -76,3 +76,12 @@ echo "manas 1.komandas izpilde ir pabeigta"
 
 <sub>chmod 754 mana_komanda_1 (nomaina ties\ibas caur bin kodu 111 101 100</sub>
 
+3.Lekcija
+
+<sub>git clone https://github.com/auzinska/RTR105</sub>
+<sub></sub>
+<sub></sub>
+<sub></sub>
+<sub></sub>
+<sub></sub>
+
