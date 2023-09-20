@@ -25,21 +25,37 @@ Studiju kursa datorzinībāš (pamatkurss) elektroniskā kade
 
 # 2. lekcija
 man ls
+
 <sub>ls -l</sub> 
+
 #<sub>ls -l -t</sub>
+
 <sub>home/user = ~</sub>
+
 <sub>mkdir = uztaisa mapi</sub>
+
 <sub>rmdir = izdzēst mapi</sub>
+
 <sub>echo 12345 > a.txt txt faila izveide/papildinājums</sub>
+
 <sub>hexdump -C a.txt parāda vērtības hexdec veidā</sub>
+
 <sub>cat a.txt ir lasīt</sub>
+
 <sub>echo 123123123 >> a.txt papildina iepriekšējo</sub>
+
 <sub>man echo=manual</sub>
+
 <sub>history > history_20230913_class_02.txt</sub>
+
 <sub>find ./myfolder -mindepth 1 ! -regex '^./myfolder/test2\(/.*\)?' -delete</sub>   
+
 <sub>rm -d -- *[!0-9]</sub>
+
 <sub> mv hihi.dat ~/DEF/ vai ./DEF/ MOVE UZ FOLDER</sub>
+
 <sub>mv DEF/hihi.dat DEF/hihihi.exe</sub>
+
 <sub>rm -r DEF</sub>
 
 
@@ -50,7 +66,9 @@ cat template.txt
 
 ## Komandas
 <sub>nano mana_komanda_1.sh (aver teksta redaktoru scripta shell valodā)</sub>
+
 <sub>script =! kods</sub>
+
 <sub>#!/bin/bash  vai  bin/python for ez </sub>
 
 <sub>
@@ -60,6 +78,7 @@ cat template.txt
 cd </sub>
 
 <sub>mkdir ABC</sub>
+
 <sub>
 echo "123456" > a.txt
 </sub>
@@ -71,9 +90,11 @@ mv a.txt ABC/b.txt
 <sub>
 echo "789" >> ABC/b.txt
 </sub>
+
 <sub>
 cat ABC/b.txt
 </sub>
+
 <sub>
 echo "manas 1.komandas izpilde ir pabeigta"
 </sub>
@@ -85,7 +106,11 @@ echo "manas 1.komandas izpilde ir pabeigta"
 <sub>git clone https://github.com/auzinska/RTR105</sub>
 
 <sub>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</sub>
-<sub></sub>
+
+<sub>rm -rf RTR105</sub>
+
+<sub> history | grep clone</sub>
+
 <sub></sub>
 <sub></sub>
 <sub></sub>
