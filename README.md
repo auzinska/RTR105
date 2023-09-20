@@ -55,15 +55,19 @@ cat template.txt
 
 <sub>
 #!/bin/bash </sub>
+
 <sub>
 cd </sub>
+
 <sub>mkdir ABC</sub>
 <sub>
 echo "123456" > a.txt
 </sub>
+
 <sub>
 mv a.txt ABC/b.txt
 </sub>
+
 <sub>
 echo "789" >> ABC/b.txt
 </sub>
@@ -79,7 +83,8 @@ echo "manas 1.komandas izpilde ir pabeigta"
 3.Lekcija
 
 <sub>git clone https://github.com/auzinska/RTR105</sub>
-<sub></sub>
+
+<sub>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</sub>
 <sub></sub>
 <sub></sub>
 <sub></sub>
