@@ -111,7 +111,37 @@ echo "manas 1.komandas izpilde ir pabeigta"
 
 <sub> history | grep clone</sub>
 
-<sub>history -a</sub
-<sub></sub>
+
+
+<sub>user@epk428-4:~/RTR105/Class_05$ nano second.c 
+user@epk428-4:~/RTR105/Class_05$ ls -lt
+total 28
+-rw-rw-r-- 1 user user    57 Sep 27 09:18 second.c
+-rwxrwxr-x 1 user user 16696 Sep 27 09:17 a.out
+-rw-rw-r-- 1 user user    96 Sep 27 09:03 first.c
+user@epk428-4:~/RTR105/Class_05$ nano second.c 
+user@epk428-4:~/RTR105/Class_05$ gcc second.c 
+user@epk428-4:~/RTR105/Class_05$ ./a.out
+Hello World!user@epk428-4:~/RTR105/Class_05$ 
+</sub>
+
+<sub>
+#include <stdio.h>
+
+int main()
+
+ {
+
+ printf("Hello World!\n");
+ printf("\a");
+
+ return 0;
+ }
+
+</sub>
+
+<sub>history -a</sub>
+<sub>user@epk428-4:~/RTR105/Class_05$ gcc -E second.c > second.i
+</sub>
 <sub></sub>
 
