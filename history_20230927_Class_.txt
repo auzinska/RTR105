@@ -1,0 +1,92 @@
+VirtualBox --startvm XP
+quartus
+git clone https://github.com/auzinska/RTR105
+ls -lt
+cd RTR105/
+ls -lt
+pwd
+mkdir Class_05
+cd Class_05/
+ls -lt
+pwd
+nano first.c
+LS -LT
+gcc -verison
+gcc --version
+gcc first.c
+ls -lt
+nano first.c 
+gcc first.c 
+ls -lt
+nano firtst
+nano first.c 
+gcc first.c 
+ls -lt
+nano first.c
+a.out
+./a.out 
+echo $?
+nano first.c 
+ls -lt
+gcc first.c -o first.out
+ls -lt
+./first.out 
+echo$?
+echo $?
+gcc first.c
+ls -lt
+nano first.c
+diff a.out first.out
+rm *.out
+ls -lt
+nano first.c 
+./a.out
+cat first.c 
+cp first.c second.c
+ls -lt
+nano second.c 
+gcc second.c 
+nano second.c 
+ls -lt
+nano second.c 
+gcc second.c 
+./a.out
+cat second.c 
+nano second.c 
+gcc second.c 
+nano second.c 
+gcc second.c 
+./a.out
+nano second.c 
+gcc -E second.c 
+gcc -E second.c > second.i
+ls -lt
+gcc second.c -o second_from_c.out
+gcc second.i -o second_from_i.out
+diff second_from_c.out second_from_i.out 
+gcc -S second.c 
+ls -lt
+cat second.s
+gcc second.c -o second_from_s.out
+diff second_from_c.out second_from_s.out 
+ls -lt
+gcc -c second.c
+ls -lt
+cat second.o
+gcc second.o -o second_from_o.out
+gcc -Wall -save-temps second.c
+ls -lt
+cd ..
+pwd
+ls -lta
+nano .gitignore
+ls -lt
+nano history
+history -a
+nano history
+ls -lt
+nano history\
+nano history
+nano git-upload
+ls -lt
+history -a
