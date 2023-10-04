@@ -1,0 +1,56 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/auzinska/RTR105
+    4  LS -LT
+    5  ls -lt
+    6  cd RTR105
+    7  mkdir Class_07
+    8  cd Class_07
+    9  nano printf_test.c
+   10  gcc a
+   11  nano printf_test.c
+   12  gcc -print_test.c
+   13  nano printf_test.c
+   14  gcc print_test.c
+   15  ./a.out
+   16  nano printf_test.c
+   17  ./a.out
+   18  nano printf_test.c
+   19  ./a.out
+   20  gcc a.out
+   21  pwd
+   22  gcc printf_test.c 
+   23  ./a.out
+   24  nano printf_test.c
+   25  ./a.out
+   26  nano printf_test.c
+   27  ./a.out
+   28  nano printf_test.c
+   29  ./a.out
+   30  nano printf_test.c
+   31  ./a.out
+   32  nano printf_test.c
+   33  gcc printf_test.c 
+   34  ./a.out
+   35  nano printf_test.c
+   36  ./a.out
+   37  nano printf_test.c
+   38  gcc printf_test.c 
+   39  ./a.out 
+   40  nano printf_test.c
+   41  gcc printf_test.c 
+   42  ./a.out 
+   43  nano printf_test.c
+   44  nano git-upload
+   45  gcc git-upload
+   46  nano history
+   47  ./git-upload
+   48  chmod 754 git-upload
+   49  ./git-upload
+   50  history -a
+   51  nano history 
+   52  nano git-upload 
+   53  nano history 
+   54  history -a
+   55  ./git-upload
+   56  history > history_20231004_class_07.txt
