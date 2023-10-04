@@ -18,6 +18,8 @@ git commit -m "Class_$1$2"
 git pull
 git push origin main
 
+history > history_20230913_class_03.txt
+
 histori -a
 
 ./git-upload 
