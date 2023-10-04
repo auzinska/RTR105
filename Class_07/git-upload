@@ -1,8 +1,8 @@
 #!/bin/bash
 ./history $1
 git add .
-git config --global user.name tatusmatrix
-git config --global user.email Tatjana.Solovjova@rtu.lv
+git config --global user.name auzinska
+git config --global user.email auzinska@gmail.com
 git commit -m "Class_$1$2"
 git pull
 git push origin main
