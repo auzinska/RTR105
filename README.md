@@ -143,5 +143,37 @@ int main()
 <sub>history -a</sub>
 <sub>user@epk428-4:~/RTR105/Class_05$ gcc -E second.c > second.i
 </sub>
-<sub></sub>
+<sub>
+
+Variables c valodā
+
+#include <studio.h>
+
+int main(void)
+ {
+ int i; /*diskrētā mainīgā deklerēšana - noteikta izmēra atbilstosi datu tipam atmiņas apgabalā
+       tipam -int => 4 bytes, lai uzzinatu ...
+        atmiņas apgabala sasaisyšana ar norādīto identifikātoru
+        NB! vertība
+         */
+ printf("i mainīgā izmērs baitos(simbols): %ls\n",sizeof(i));
+ printf("i mainīgā atrašanas vieta atmiņa(adrese jeb norāde): %p\n", i);
+
+
+ printf("i mainīgā vērtiba uzreiz bez deklerēšanas(simbols): %c\n", i);
+ printf("i mainīgā vērtiba uzreiz bez deklerēšanas(dec): %d\n", i);
+ printf("i mainīgā vērtiba uzreiz bez deklerēšanas(oct): %#o\n", i);
+ printf("i mainīgā vērtiba uzreiz bez deklerēšanas(hex): %x\n", i);
+ printf("i mainīgā vērtiba uzreiz bez deklerēšanas(real): %f\n", i);
+ printf("i mainīgā vērtiba uzreiz bez deklerēšanas(real): %e\n", i);
+
+
+ printf("\n");
+
+ return 0;
+ 
+ }
+
+
+</sub>
 
