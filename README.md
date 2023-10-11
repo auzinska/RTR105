@@ -177,3 +177,10 @@ int main(void)
 
 </sub>
 
+<sub>
+Ir nepieciešamības:
+   Pildīt vai nepildīt koda kādu daļu
+
+   Atkārtot secīgi pildīt 
+</sub>
+
