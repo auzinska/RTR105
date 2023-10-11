@@ -1,0 +1,48 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/auzinska/RTR105
+    4  cd RTR105
+    5  ls -lt
+    6  nano variables.c
+    7  gcc variables.c 
+    8  nano variables.c 
+    9  gcc variables.c 
+   10  ./a.out
+   11  ls -lt
+   12  nano variables.c 
+   13  ./a.out
+   14  ls -lt
+   15  gcc variables.c 
+   16  ./a.out
+   17  nano variables.c 
+   18  cp variables.c operations.c
+   19  nano operations.c.c 
+   20  nano operations.c
+   21  gcc operations.c 
+   22  nano operations.c
+   23  gcc operations.c 
+   24  ./a.out
+   25  nano operations.c
+   26  gcc operations.c 
+   27  ./a.out
+   28  nano operations.c
+   29  gcc operations.c 
+   30  nano operations.c
+   31  gcc operations.c 
+   32  nano operations.c
+   33  gcc operations.c 
+   34  ./a.out
+   35  nano operations.c 
+   36  history -a
+   37  history > history_20231011_07.txt
+   38  history -a
+   39  ./git-upload
+   40  git clone https://github.com/auzinska/RTR105
+   41  cd RTR105
+   42  ls -lt
+   43  history
+   44  cp operations.c if.c
+   45  nano if.c
+   46  nano operations.c 
+   47  nano if.c
+   48  history > history_20231011_class_06.txt
