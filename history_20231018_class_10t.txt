@@ -1,0 +1,8 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/auzinska/RTR105
+    4  cd RTR105
+    5  LS -LT
+    6  ls -lt
+    7  history
+    8  history > history_20231018_class_10t.txt
