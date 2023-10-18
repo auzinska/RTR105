@@ -1,0 +1,31 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/auzinska/RTR105
+    4  cd RTR105
+    5  LS -LT
+    6  ls -lt
+    7  history
+    8  history > history_20231018_class_10t.txt
+    9  history -a
+   10  ./git-upload
+   11  nano git-upload 
+   12  nano histort
+   13  nano history
+   14  ./git-upload 
+   15  cd RTR105
+   16  ls -lt
+   17  nano while_char.c
+   18  gcc while_char.c 
+   19  nano while_char.c
+   20  gcc while_char.c 
+   21  ./a.out
+   22  nano while_char.c
+   23  gcc while_char.c 
+   24  ./a.out
+   25  nano while_char.c
+   26  nano history
+   27  nano git-upload 
+   28  nano gitignore
+   29  ls -lt
+   30  history
+   31  history > history_20231018_class_09.txt

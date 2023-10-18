@@ -7,3 +7,26 @@ ls -lt
 history
 history > history_20231018_class_10t.txt
 history -a
+./git-upload
+nano git-upload 
+nano histort
+nano history
+./git-upload 
+cd RTR105
+ls -lt
+nano while_char.c
+gcc while_char.c 
+nano while_char.c
+gcc while_char.c 
+./a.out
+nano while_char.c
+gcc while_char.c 
+./a.out
+nano while_char.c
+nano history
+nano git-upload 
+nano gitignore
+ls -lt
+history
+history > history_20231018_class_09.txt
+history -a

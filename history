@@ -4,22 +4,4 @@ name=history_$(date +'%Y%m%d')_Class_$1.txt
 #echo $name
 # https://superuser.com/questions/555310/bash-save-history-without-exit
 # history -a
-cat ~/.bash_history > $name
-
-
-./git-upload
-
-#!/bin/bash
-./history $1
-git add .
-#git config --global user.name tatusmatrix
-#git config --global user.email Tatjana.Solovjova@rtu.lv
-git commit -m "Class_$1$2"
-git pull
-git push origin main
-
-#history > history_20230913_class_03.txt
-
-#histori -a
-
-#./git-upload 
+cat ~/.bash_history > $name 
