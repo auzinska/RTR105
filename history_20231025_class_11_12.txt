@@ -1,0 +1,146 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/auzinska/RTR105
+    4  LS -LT
+    5  ls -lt
+    6  cd RTR105
+    7  ls -lt
+    8  cat history.txt
+    9  nano foo.h
+   10  nano foo.c
+   11  nano main.c
+   12  gcc -Wall -c foo.c
+   13  gcc -Wall -c main.c
+   14  gcc -o testprogram foo.o main.o
+   15  ./main.c
+   16  chmod main.c 745
+   17  chmod 745 mainc
+   18  chmod 754 main.c
+   19  ./main.c
+   20  nano main.c
+   21  gcc -Wall -c main.c
+   22  nano main.c
+   23  gcc -Wall -c main.c
+   24  ./main.o
+   25  chmod 745 main.o
+   26  ./main.o
+   27  ls -lt
+   28  ./testprogram
+   29  nano main.c
+   30  nano foo.c
+   31  gcc -Wall -c foo.c
+   32  nano foo.c
+   33  gcc -Wall -c foo.c
+   34  gcc -Wall -c main.c
+   35  nano mai9n.c
+   36  main.c
+   37  nano main.c
+   38  gcc -o testprogram foo.o main.o
+   39  ./testprogram
+   40  cat testprogram
+   41  hexdump testprogram
+   42  ./testprogram
+   43  nano foo.c\
+   44  nano foo.c
+   45  ls -lt
+   46  gcc -Wall -c foo.c
+   47  nano foo.c
+   48  gcc -Wall -c foo.c
+   49  nano foo.c
+   50  gcc -Wall -c foo.c
+   51  gcc -Wall -c main.c
+   52  gcc -o testprogram foo.o main.o
+   53  ./testprogram
+   54  nano main.c
+   55  nano pointer.c
+   56  gcc pointer.c
+   57  nano pointer.c
+   58  gcc pointer.c
+   59  nano pointer.c
+   60  gcc pointer.c
+   61  nano pointer.c
+   62  gcc pointer.c
+   63  ./pointer.c
+   64  chmod 745 pointer.c 
+   65  ./pointer.c
+   66  gcc pointer.c
+   67  nano pointer.c
+   68  gcc pointer.c
+   69  ./pointer.c
+   70  nano pointer.c
+   71  nano test.c
+   72  gcc test.c
+   73  ./test.c
+   74  chmod 745 test.c
+   75  gcc test.c
+   76  ./test.v
+   77  ./test.c
+   78  nano test.c
+   79  gcc test.c
+   80  ./test.c
+   81  nano test.c
+   82  cd RTR105
+   83  ls -lt
+   84  nano test.c
+   85  gcc test.c
+   86  ./test.c
+   87  nano test.c
+   88  gcc test.c
+   89  ./test.c
+   90  nano test.c
+   91  gcc test.c
+   92  nano test.c
+   93  gcc test.c
+   94  ./test.c
+   95  rm test.c
+   96  ls -lt
+   97  nano test.c
+   98  gcc test.c
+   99  ./test.c
+  100  chmod 745 test.c
+  101  ls lt
+  102  ls -lt
+  103  chmod 754 test.c
+  104  gcc test.c
+  105  ./test.c
+  106  nano test.c
+  107  gcc test.c
+  108  ./test.c
+  109  nano string.c
+  110  gcc test.c
+  111  ./test.c
+  112  nano test.c
+  113  gcc string.c
+  114  nano string.c
+  115  gcc string.c
+  116  nano string.c
+  117  gcc string.c
+  118  ./string.c
+  119  chmod 754 string.c
+  120  ./string.c
+  121  nano string.c 
+  122  gcc string.c 
+  123  ./string.c 
+  124  nano string.c 
+  125  gcc string.c
+  126  nano string.c 
+  127  gcc string.c 
+  128  ./string.c
+  129  nano string.c 
+  130  nano test.c
+  131  nano word_count.c
+  132  gcc word_count
+  133  gcc word-count.c
+  134  gcc word_count.c
+  135  ./word_count.c
+  136  chmod 754 word_count.c
+  137  gcc word_count.c 
+  138  ./word_count.c 
+  139  nano word_count.c 
+  140  gcc word_count.c 
+  141  ./word_count.out
+  142  ./word_count.c 
+  143  nano word_count.c 
+  144  gcc word_count.c 
+  145  ./a.out
+  146  history > history_20231025_class_11_12.txt

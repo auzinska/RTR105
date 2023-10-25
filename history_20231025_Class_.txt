@@ -1,0 +1,147 @@
+VirtualBox --startvm XP
+quartus
+git clone https://github.com/auzinska/RTR105
+LS -LT
+ls -lt
+cd RTR105
+ls -lt
+cat history.txt
+nano foo.h
+nano foo.c
+nano main.c
+gcc -Wall -c foo.c
+gcc -Wall -c main.c
+gcc -o testprogram foo.o main.o
+./main.c
+chmod main.c 745
+chmod 745 mainc
+chmod 754 main.c
+./main.c
+nano main.c
+gcc -Wall -c main.c
+nano main.c
+gcc -Wall -c main.c
+./main.o
+chmod 745 main.o
+./main.o
+ls -lt
+./testprogram
+nano main.c
+nano foo.c
+gcc -Wall -c foo.c
+nano foo.c
+gcc -Wall -c foo.c
+gcc -Wall -c main.c
+nano mai9n.c
+main.c
+nano main.c
+gcc -o testprogram foo.o main.o
+./testprogram
+cat testprogram
+hexdump testprogram
+./testprogram
+nano foo.c\
+nano foo.c
+ls -lt
+gcc -Wall -c foo.c
+nano foo.c
+gcc -Wall -c foo.c
+nano foo.c
+gcc -Wall -c foo.c
+gcc -Wall -c main.c
+gcc -o testprogram foo.o main.o
+./testprogram
+nano main.c
+nano pointer.c
+gcc pointer.c
+nano pointer.c
+gcc pointer.c
+nano pointer.c
+gcc pointer.c
+nano pointer.c
+gcc pointer.c
+./pointer.c
+chmod 745 pointer.c 
+./pointer.c
+gcc pointer.c
+nano pointer.c
+gcc pointer.c
+./pointer.c
+nano pointer.c
+nano test.c
+gcc test.c
+./test.c
+chmod 745 test.c
+gcc test.c
+./test.v
+./test.c
+nano test.c
+gcc test.c
+./test.c
+nano test.c
+cd RTR105
+ls -lt
+nano test.c
+gcc test.c
+./test.c
+nano test.c
+gcc test.c
+./test.c
+nano test.c
+gcc test.c
+nano test.c
+gcc test.c
+./test.c
+rm test.c
+ls -lt
+nano test.c
+gcc test.c
+./test.c
+chmod 745 test.c
+ls lt
+ls -lt
+chmod 754 test.c
+gcc test.c
+./test.c
+nano test.c
+gcc test.c
+./test.c
+nano string.c
+gcc test.c
+./test.c
+nano test.c
+gcc string.c
+nano string.c
+gcc string.c
+nano string.c
+gcc string.c
+./string.c
+chmod 754 string.c
+./string.c
+nano string.c 
+gcc string.c 
+./string.c 
+nano string.c 
+gcc string.c
+nano string.c 
+gcc string.c 
+./string.c
+nano string.c 
+nano test.c
+nano word_count.c
+gcc word_count
+gcc word-count.c
+gcc word_count.c
+./word_count.c
+chmod 754 word_count.c
+gcc word_count.c 
+./word_count.c 
+nano word_count.c 
+gcc word_count.c 
+./word_count.out
+./word_count.c 
+nano word_count.c 
+gcc word_count.c 
+./a.out
+history > history_20231025_class_11_12.txt
+history -a
