@@ -1,0 +1,72 @@
+VirtualBox --startvm XP
+quartus
+git clone https://github.com/auzinska/RTR105
+cd RTR105
+mkdir Class_14
+cd Class_14
+cd RTR105
+cd ..
+mkdir Class_13
+cd Class_13
+nano new_buffer.c
+gcc new_buffer.c 
+hexdump new_buffer.c 
+touch fopen.c
+touch fclode.c
+cp new_buffer.c fopen.c
+nano fopen_test.c
+cp fopen.c fopen_test.c
+nano fopen_test.c 
+gcc fopen_test.c 
+./a.out
+echo$?
+echo $?
+nano fopen_test.c 
+gcc fopen_test.c 
+./a.out
+echo $?
+hexdump fopen_test.c 
+cat fopen_test.c 
+nano fopen_test.c 
+touch fopen.txt
+nano fopen_test.c 
+gcc fopen_test.c 
+nano fopen_test.c 
+gcc fopen_test.c 
+nano fopen_test.c 
+gcc fopen_test.c 
+ls -lt
+nano fopem.txt
+ls -lt
+./a.out
+ls -lt
+nano fopen.txt
+gcc fopen_test.c 
+nano fopen_test.c 
+./a.out
+cat fopen.txt
+nano fopen_test.c 
+./a.out
+cat fopen.txt
+nano fopen_test.c 
+gcc fopen_test.c 
+./a.out
+cat fopen.txt
+nano fopen_test.c 
+nano fwrite.c
+gcc fwrite.c 
+./a.out
+ls -lt
+touch myfile.bin
+./a.out
+ls -lt
+cat myfile.bin
+nano fwrite.c
+gcc fwrite.c
+./a.out
+hexdump -C myfile.bin
+nano fwrite.c
+history
+history > history_20231101_class_13_a
+history a
+history -a

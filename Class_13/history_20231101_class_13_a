@@ -1,0 +1,70 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/auzinska/RTR105
+    4  cd RTR105
+    5  mkdir Class_14
+    6  cd Class_14
+    7  cd RTR105
+    8  cd ..
+    9  mkdir Class_13
+   10  cd Class_13
+   11  nano new_buffer.c
+   12  gcc new_buffer.c 
+   13  hexdump new_buffer.c 
+   14  touch fopen.c
+   15  touch fclode.c
+   16  cp new_buffer.c fopen.c
+   17  nano fopen_test.c
+   18  cp fopen.c fopen_test.c
+   19  nano fopen_test.c 
+   20  gcc fopen_test.c 
+   21  ./a.out
+   22  echo$?
+   23  echo $?
+   24  nano fopen_test.c 
+   25  gcc fopen_test.c 
+   26  ./a.out
+   27  echo $?
+   28  hexdump fopen_test.c 
+   29  cat fopen_test.c 
+   30  nano fopen_test.c 
+   31  touch fopen.txt
+   32  nano fopen_test.c 
+   33  gcc fopen_test.c 
+   34  nano fopen_test.c 
+   35  gcc fopen_test.c 
+   36  nano fopen_test.c 
+   37  gcc fopen_test.c 
+   38  ls -lt
+   39  nano fopem.txt
+   40  ls -lt
+   41  ./a.out
+   42  ls -lt
+   43  nano fopen.txt
+   44  gcc fopen_test.c 
+   45  nano fopen_test.c 
+   46  ./a.out
+   47  cat fopen.txt
+   48  nano fopen_test.c 
+   49  ./a.out
+   50  cat fopen.txt
+   51  nano fopen_test.c 
+   52  gcc fopen_test.c 
+   53  ./a.out
+   54  cat fopen.txt
+   55  nano fopen_test.c 
+   56  nano fwrite.c
+   57  gcc fwrite.c 
+   58  ./a.out
+   59  ls -lt
+   60  touch myfile.bin
+   61  ./a.out
+   62  ls -lt
+   63  cat myfile.bin
+   64  nano fwrite.c
+   65  gcc fwrite.c
+   66  ./a.out
+   67  hexdump -C myfile.bin
+   68  nano fwrite.c
+   69  history
+   70  history > history_20231101_class_13_a
