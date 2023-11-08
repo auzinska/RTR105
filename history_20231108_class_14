@@ -1,0 +1,163 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/auzinska/RTR105
+    4  cd RTR105
+    5  mkdir Class_14
+    6  cd Class_14
+    7  gnuplot --v
+    8  cd RTR105
+    9  cd Class_14
+   10  nano gnuplot_examle_1.gp
+   11  chmod 744 gnuplot_examle_1.gp 
+   12  ls -lt
+   13  gcc gnuplot_examle_1.gp 
+   14  ./a.out 
+   15  ./a.out gnuplot_examle_1.gp 
+   16  nono -h
+   17  chmod 754 gnuplot_examle_1.gp 
+   18  gcc gnuplot_examle_1.gp 
+   19  gnuplot
+   20  ls-lt
+   21  ls -lt
+   22  nano gnuplot_examle_1.gp 
+   23  # set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+   24  # set output 'fillcrvs.2.png'
+   25  set key outside right top vertical Right noreverse enhanced autotitle nobox
+   26  unset parametric
+   27  set title "Intersection of two parabolas" 
+   28  set xrange [ * : * ] noreverse writeback
+   29  set x2range [ * : * ] noreverse writeback
+   30  set yrange [ * : * ] noreverse writeback
+   31  set y2range [ * : * ] noreverse writeback
+   32  set zrange [ * : * ] noreverse writeback
+   33  set cbrange [ * : * ] noreverse writeback
+   34  set rrange [ * : * ] noreverse writeback
+   35  set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+   36  NO_ANIMATION = 1
+   37  plot x*x with filledcurves, 50-x*x with filledcurves, x*x with line lt 1
+   38  nano gnuplot_examle_1.gp 
+   39  touch world.dat
+   40  ls lt
+   41  ls -lt
+   42  gcc gnuplot_examle_1.gp 
+   43  ./a.out
+   44  nano gnuplot_examle_1.gp 
+   45  gcc gnuplot_examle_1.gp 
+   46  nano gnuplot_examle_1.gp 
+   47  #!/usr/local/bin/gnuplot -persist
+   48  # set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+   49  # set output 'fillcrvs.7.png'
+   50  set format x "" 
+   51  set format y "" 
+   52  set grid nopolar
+   53  set grid xtics nomxtics ytics nomytics noztics nomztics nortics nomrtics  nox2tics nomx2tics noy2tics nomy2tics nocbtics nomcbtics
+   54  set grid layerdefault   lt 0 linecolor 0 linewidth 0.500,  lt 0 linecolor 0 linewidth 0.500
+   55  set object  1 rect from graph 0, 0 to graph 1, 1
+   56  set object  1 behind clip lw 1.0  dashtype solid fc  rgb "#afffff"  fillstyle   solid 1.00 border lt -1
+   57  unset parametric
+   58  set title "world.dat plotted with filledcurves" 
+   59  set xrange [ -180.000 : 180.000 ] noreverse nowriteback
+   60  set x2range [ * : * ] noreverse writeback
+   61  set yrange [ -70.0000 : 80.0000 ] noreverse nowriteback
+   62  set y2range [ * : * ] noreverse writeback
+   63  set zrange [ * : * ] noreverse writeback
+   64  set cbrange [ * : * ] noreverse writeback
+   65  set rrange [ * : * ] noreverse writeback
+   66  set lmargin  1
+   67  set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+   68  NO_ANIMATION = 1
+   69  ## Last datafile plotted: "world.dat"
+   70  plot 'world.dat' with filledcurve notitle fs solid 1.0 lc rgb 'dark-goldenrod'
+   71  nano gnuplot_examle_1.gp 
+   72  # set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+   73  # set output 'fillcrvs.7.png'
+   74  set format x ""
+   75  set format y ""
+   76  set grid nopolar
+   77  set grid xtics nomxtics ytics nomytics noztics nomztics nortics nomrtics  nox2tics nomx2tics noy2tics nomy2tics nocbtics nomcbtics
+   78  set grid layerdefault   lt 0 linecolor 0 linewidth 0.500,  lt 0 linecolor 0 linewidth 0.500
+   79  set object  1 rect from graph 0, 0 to graph 1, 1
+   80  set object  1 behind clip lw 1.0  dashtype solid fc  rgb "#afffff"  fillstyle   solid 1.00 border lt -1
+   81  unset parametric
+   82  set title "world.dat plotted with filledcurves"
+   83  set xrange [ -180.000 : 180.000 ] noreverse nowriteback
+   84  set x2range [ * : * ] noreverse writeback
+   85  set yrange [ -70.0000 : 80.0000 ] noreverse nowriteback
+   86  set y2range [ * : * ] noreverse writeback
+   87  set zrange [ * : * ] noreverse writeback
+   88  set cbrange [ * : * ] noreverse writeback
+   89  set rrange [ * : * ] noreverse writeback
+   90  set lmargin  1
+   91  set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+   92  NO_ANIMATION = 1
+   93  ## Last datafile plotted: "world.dat"
+   94  cat world.dat
+   95  nano gnuplot_examle_1.gp 
+   96  #!/usr/bin/gnuplot -persist
+   97  # set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+   98  # set output 'pm3d.5.png'
+   99  set border 4095 front lt black linewidth 1.000 dashtype solid
+  100  unset parametric
+  101  set view 50, 50, 1, 1
+  102  set samples 25, 25
+  103  set isosamples 20, 20
+  104  unset surface
+  105  set style data lines
+  106  set xyplane relative 0
+  107  set title "set pm3d at bstbst (funny combination, only for screen or postscript)"
+  108  set xlabel "x"
+  109  set xrange [ -15.0000 : 15.0000 ] noreverse nowriteback
+  110  set x2range [ * : * ] noreverse writeback
+  111  set ylabel "y"
+  112  set yrange [ -15.0000 : 15.0000 ] noreverse nowriteback
+  113  set y2range [ * : * ] noreverse writeback
+  114  set zrange [ -0.250000 : 1.00000 ] noreverse nowriteback
+  115  set cbrange [ * : * ] noreverse writeback
+  116  set rrange [ * : * ] noreverse writeback
+  117  set pm3d implicit at bstbst
+  118  set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+  119  NO_ANIMATION = 1
+  120  splot sin(sqrt(x**2+y**2))/sqrt(x**2+y**2)
+  121  nano gnuplot_examle_1.gp 
+  122  # set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+  123  # set output 'histerror.1.png'
+  124  set border 3 front lt black linewidth 1.000 dashtype solid
+  125  set style fill   solid 1.00 border lt -1
+  126  set key fixed right top vertical Right noreverse enhanced autotitle columnhead nobox
+  127  set style histogram errorbars gap 2 lw 2title textcolor lt -1
+  128  set offsets 0, 0, 2, 0
+  129  unset parametric
+  130  set datafile separator "        "
+  131  set style data histograms
+  132  set xtics border in scale 1,0.5 nomirror norotate  autojustify
+  133  set xtics  norangelimit
+  134  set xtics   ()
+  135  set ytics border in scale 1,0.5 nomirror norotate  autojustify
+  136  set cbtics border in scale 1,0.5 nomirror norotate  autojustify
+  137  set title "Histogram with error bars"
+  138  set xrange [ * : * ] noreverse writeback
+  139  set x2range [ * : * ] noreverse writeback
+  140  set yrange [ 0.00000 : * ] noreverse writeback noextend
+  141  set y2range [ * : * ] noreverse writeback
+  142  set zrange [ * : * ] noreverse writeback
+  143  set cbrange [ * : * ] noreverse writeback
+  144  set rrange [ * : * ] noreverse writeback
+  145  set bmargin  5
+  146  set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+  147  NO_ANIMATION = 1
+  148  ## Last datafile plotted: "world.dat"
+  149  plot 'world.dat' using 2:3 fs solid 0.5 lw 2 ti 'A',      '' using 4:5:xticlabel(1) fs solid 0.0 lw 2 ti>
+  150  nano fun.c++
+  151  gcc fun.c++ -lm
+  152  nano fun.c++
+  153  gcc fun.c++ -lm
+  154  ./a.out
+  155  nano fun.c++
+  156  exit\
+  157  cd Class_14
+  158  history -a
+  159  ./a.out
+  160  cd ..
+  161  ./a.out
+  162  history
+  163  history > history_20231108_class_14

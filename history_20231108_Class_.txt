@@ -1,0 +1,166 @@
+VirtualBox --startvm XP
+quartus
+git clone https://github.com/auzinska/RTR105
+cd RTR105
+mkdir Class_14
+cd Class_14
+gnuplot --v
+cd RTR105
+cd Class_14
+nano gnuplot_examle_1.gp
+chmod 744 gnuplot_examle_1.gp 
+ls -lt
+gcc gnuplot_examle_1.gp 
+./a.out 
+./a.out gnuplot_examle_1.gp 
+nono -h
+chmod 754 gnuplot_examle_1.gp 
+gcc gnuplot_examle_1.gp 
+gnuplot
+ls-lt
+ls -lt
+nano gnuplot_examle_1.gp 
+# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+# set output 'fillcrvs.2.png'
+set key outside right top vertical Right noreverse enhanced autotitle nobox
+unset parametric
+set title "Intersection of two parabolas" 
+set xrange [ * : * ] noreverse writeback
+set x2range [ * : * ] noreverse writeback
+set yrange [ * : * ] noreverse writeback
+set y2range [ * : * ] noreverse writeback
+set zrange [ * : * ] noreverse writeback
+set cbrange [ * : * ] noreverse writeback
+set rrange [ * : * ] noreverse writeback
+set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+NO_ANIMATION = 1
+plot x*x with filledcurves, 50-x*x with filledcurves, x*x with line lt 1
+nano gnuplot_examle_1.gp 
+touch world.dat
+ls lt
+ls -lt
+gcc gnuplot_examle_1.gp 
+./a.out
+nano gnuplot_examle_1.gp 
+gcc gnuplot_examle_1.gp 
+nano gnuplot_examle_1.gp 
+#!/usr/local/bin/gnuplot -persist
+# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+# set output 'fillcrvs.7.png'
+set format x "" 
+set format y "" 
+set grid nopolar
+set grid xtics nomxtics ytics nomytics noztics nomztics nortics nomrtics  nox2tics nomx2tics noy2tics nomy2tics nocbtics nomcbtics
+set grid layerdefault   lt 0 linecolor 0 linewidth 0.500,  lt 0 linecolor 0 linewidth 0.500
+set object  1 rect from graph 0, 0 to graph 1, 1
+set object  1 behind clip lw 1.0  dashtype solid fc  rgb "#afffff"  fillstyle   solid 1.00 border lt -1
+unset parametric
+set title "world.dat plotted with filledcurves" 
+set xrange [ -180.000 : 180.000 ] noreverse nowriteback
+set x2range [ * : * ] noreverse writeback
+set yrange [ -70.0000 : 80.0000 ] noreverse nowriteback
+set y2range [ * : * ] noreverse writeback
+set zrange [ * : * ] noreverse writeback
+set cbrange [ * : * ] noreverse writeback
+set rrange [ * : * ] noreverse writeback
+set lmargin  1
+set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+NO_ANIMATION = 1
+## Last datafile plotted: "world.dat"
+plot 'world.dat' with filledcurve notitle fs solid 1.0 lc rgb 'dark-goldenrod'
+nano gnuplot_examle_1.gp 
+# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+# set output 'fillcrvs.7.png'
+set format x ""
+set format y ""
+set grid nopolar
+set grid xtics nomxtics ytics nomytics noztics nomztics nortics nomrtics  nox2tics nomx2tics noy2tics nomy2tics nocbtics nomcbtics
+set grid layerdefault   lt 0 linecolor 0 linewidth 0.500,  lt 0 linecolor 0 linewidth 0.500
+set object  1 rect from graph 0, 0 to graph 1, 1
+set object  1 behind clip lw 1.0  dashtype solid fc  rgb "#afffff"  fillstyle   solid 1.00 border lt -1
+unset parametric
+set title "world.dat plotted with filledcurves"
+set xrange [ -180.000 : 180.000 ] noreverse nowriteback
+set x2range [ * : * ] noreverse writeback
+set yrange [ -70.0000 : 80.0000 ] noreverse nowriteback
+set y2range [ * : * ] noreverse writeback
+set zrange [ * : * ] noreverse writeback
+set cbrange [ * : * ] noreverse writeback
+set rrange [ * : * ] noreverse writeback
+set lmargin  1
+set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+NO_ANIMATION = 1
+## Last datafile plotted: "world.dat"
+cat world.dat
+nano gnuplot_examle_1.gp 
+#!/usr/bin/gnuplot -persist
+# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+# set output 'pm3d.5.png'
+set border 4095 front lt black linewidth 1.000 dashtype solid
+unset parametric
+set view 50, 50, 1, 1
+set samples 25, 25
+set isosamples 20, 20
+unset surface
+set style data lines
+set xyplane relative 0
+set title "set pm3d at bstbst (funny combination, only for screen or postscript)"
+set xlabel "x"
+set xrange [ -15.0000 : 15.0000 ] noreverse nowriteback
+set x2range [ * : * ] noreverse writeback
+set ylabel "y"
+set yrange [ -15.0000 : 15.0000 ] noreverse nowriteback
+set y2range [ * : * ] noreverse writeback
+set zrange [ -0.250000 : 1.00000 ] noreverse nowriteback
+set cbrange [ * : * ] noreverse writeback
+set rrange [ * : * ] noreverse writeback
+set pm3d implicit at bstbst
+set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+NO_ANIMATION = 1
+splot sin(sqrt(x**2+y**2))/sqrt(x**2+y**2)
+nano gnuplot_examle_1.gp 
+# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+# set output 'histerror.1.png'
+set border 3 front lt black linewidth 1.000 dashtype solid
+set style fill   solid 1.00 border lt -1
+set key fixed right top vertical Right noreverse enhanced autotitle columnhead nobox
+set style histogram errorbars gap 2 lw 2title textcolor lt -1
+set offsets 0, 0, 2, 0
+unset parametric
+set datafile separator "        "
+set style data histograms
+set xtics border in scale 1,0.5 nomirror norotate  autojustify
+set xtics  norangelimit
+set xtics   ()
+set ytics border in scale 1,0.5 nomirror norotate  autojustify
+set cbtics border in scale 1,0.5 nomirror norotate  autojustify
+set title "Histogram with error bars"
+set xrange [ * : * ] noreverse writeback
+set x2range [ * : * ] noreverse writeback
+set yrange [ 0.00000 : * ] noreverse writeback noextend
+set y2range [ * : * ] noreverse writeback
+set zrange [ * : * ] noreverse writeback
+set cbrange [ * : * ] noreverse writeback
+set rrange [ * : * ] noreverse writeback
+set bmargin  5
+set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+NO_ANIMATION = 1
+## Last datafile plotted: "world.dat"
+plot 'world.dat' using 2:3 fs solid 0.5 lw 2 ti 'A',      '' using 4:5:xticlabel(1) fs solid 0.0 lw 2 ti>
+nano fun.c++
+gcc fun.c++ -lm
+nano fun.c++
+gcc fun.c++ -lm
+./a.out
+nano fun.c++
+exit\
+cd Class_14
+history -a
+./a.out
+cd ..
+./a.out
+history
+history > history_20231108_class_14
+./a.out
+gcc history
+history -a
