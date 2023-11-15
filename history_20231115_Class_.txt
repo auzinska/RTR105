@@ -1,0 +1,17 @@
+VirtualBox --startvm XP
+quartus
+git clone https://github.com/auzinska/RTR105
+cd RTR105
+LS -LT
+ls -lt
+cd gala_fun
+ls -lt
+nano fun.c
+gcc fun.c
+./a.out
+gcc -X fun.c
+gcc fun.c++
+nano fun.txt
+nano fun.c
+gcc fun.c
+gcc -X fun.c
