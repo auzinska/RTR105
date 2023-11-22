@@ -11,7 +11,7 @@ double mans_sinuss(double x){
 
     while (k < 500){
         k++;
-        a = a*(-1)*pow(x,2)/((16*pow(k,2)+8*k));
+        a = a*((-1)*pow(x,2)/((16*pow(k,2)+8*k)));
         S = S + a;
         printf("%.2f\t%8.2f\t%8.2f\n",x,a,S);
     }

@@ -10,7 +10,7 @@ float modified_sin(float x, float A){
 void main(){
     float a,x,delta_x,b,y,A,f;
     a = 0;
-    b = 2;
+    b = 2*3.14159265358979323846;
     f = x/2;
 
     printf("Ievadi A vērtību vienādojumam (sin(x/2)=A\n)");

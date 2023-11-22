@@ -1,0 +1,4 @@
+plot [-10:10] sin(x/2)
+replot [-10:10] sin(x/2)-0.5
+replot 0.5
+replot 0
