@@ -1,0 +1,21 @@
+VirtualBox --startvm XP
+quartus
+git clone https://github/auzinska/RTR105
+git clone https://github.com/auzinska/RTR105
+cd RTR105/3LD_derative
+cd RTR105
+cd darbi/1LD_series
+chmod 744 detrtvative.gp
+chmod 744 derivative.gp
+cd darbi
+cd ..
+cd 3LD_derivative
+cd darbi/1LD_series/3LD_derivative
+cd RTR105
+cd ..
+cd 3LD_derivative
+chmod 744 derivative.gp
+ls -lt
+cd RTR105
+cd 3LD_derivative
+chmod 744 deterative_test.gp
