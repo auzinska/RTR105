@@ -1,0 +1,31 @@
+gnuplot
+plot [-10 : 10] sin(x/2)
+delta_x = 1.e-2
+
+sin = sin(x/2)
+sin_prim = ((sin((x/2) + (delta_x)) - (sin(x/2 + delta_x) - sin(x/2))) / delta_x)
+
+a=0;
+while(a<=b) {
+    sin_prim = ((sin((x/2) + (delta_x)) - (sin(x/2 + delta_x) - sin(x/2))) / delta_x)
+    }
+replot (sin((x/2)+delta_x) - (sin((x/2)+delta_x)-sin(x/2))/delta_x)
+
+replot (sin((x/2) + delta_x) - (sin((x/2) + delta_x) - (sin((x/2)+delta_x) - (sin((x/2)+delta_x)-sin(x/2))/delta_x)))
+
+
+sin_fun_fun = sin(x/2)
+
+//sin_prim
+((sin((x + delta_x)/2) - sin(x/2)) / delta_x)
+
+
+
+//delta_y
+delta_y = (sin((x + delta_x)/2) - ((sin((x + delta_x)/2) - sin(x/2)) / delta_x))
+
+//dub_y = delta_y / sin_prim;
+(sin((x + delta_x)/2) - ((sin((x + delta_x)/2) - sin(x/2)) / delta_x)) / ((sin((x + delta_x)/2) - sin(x/2)) / delta_x)
+
+
+

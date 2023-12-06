@@ -1,0 +1,39 @@
+VirtualBox --startvm XP
+quartus
+git clone https://github.com/auzinska?tab=repositories
+git clone https://github.com/auzinska/RTR105
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gnuplot
+gcc atv.c -lm
+./a.out
+gnuplot
+gcc atv.c -lm
+./a.out
+gnuplot
+gcc atv_test.c -lm
+./a.out
+gnuplot
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gcc atv.c -lm
+./a.out
+gnuplot
+gnupliot
+gnuplot

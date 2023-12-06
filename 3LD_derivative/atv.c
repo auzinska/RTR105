@@ -10,23 +10,24 @@ int main()
     // floaty;
     pFile = fopen("derivative.dat", "w");
     // printf("\tx\t\tsin(x)\t\tsin\'(x)\n");
-    fprintf(pFile, "\tx\t\tsin(x)\t\tsin\'(x)\tdelta_y\tdub_x\n");
+    fprintf(pFile, "\tx\t\tsin(x)\tsin\'(x)\tdelta_y\tdub_y\n");
     x = a;
     while (x < b)
     {
-        sin_prim = (sin(x + delta_x) - ((sin(x + delta_x) - sin(x))) / delta_x);
-        delta_y = (sin(x + delta_x) - (sin(x + delta_x) - sin_prim)) / delta_x;
+        //     vecais   sin_prim = ((sin(((x + delta_x)/2)) - (sin(((x + delta_x)/2)) - sin(x/2))) / delta_x);
+        sin_prim = ((sin((x + delta_x)/2) - sin(x/2)) / delta_x);
+        //vecais       delta_y = (sin((x + delta_x)/2) - (sin((x + delta_x)/2) - sin_prim));
+        delta_y = (sin((x + delta_x)/2) - sin_prim); 
 
-        dub_x = ;
+        //dub_y =  ;
         dub_y = delta_y / sin_prim;
         // y=sin(x);
         // printf("%10.2f\t%10.2f\t%10.2f\n",x,sin(x),(sin(x+delta_x)-sin(x))/delta_x);
-        fprintf(pFile, "%10.2f\t%10.2f\t%10.2f\t%10.2f\t%10.2f\n", x, sin(x), sin_prim, delta_y, dub_y);
+        fprintf(pFile, "%10.2f\t%10.2f\t%10.2f\t%10.2f\t%10.2f\t\n", x, sin(x), sin_prim, delta_y, dub_y);
         // printf(”%10.2f\t%10.2f\n”,x,y);
         x += delta_x; // x=x+delta_x;
 
         //delta_y
-
     }
     fclose(pFile);
     return 0;
