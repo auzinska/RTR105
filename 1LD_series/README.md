@@ -10,4 +10,5 @@ aproksimāciju ar summu un to saīsināt pēc sakarības, Ak = R * Ak-1
 2.
 
 Aproksimācijas ar summu saīsināšana:
-![Teylor_series](Teylor_series.png)
+
+![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
