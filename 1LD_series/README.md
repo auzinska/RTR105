@@ -51,10 +51,10 @@ double mans_sinuss(double x){
     printf("a_k = a_(k-1) * ((-1) * x^2) / (16k^2 + 8k)\n");
 
     return S;
-}
+    }
 
-int main(){
-    double x, y, yy;
+    int main(){
+        double x, y, yy;
 
     printf("Ievadiet x vērtību: ");
     scanf("%lf", &x);
@@ -80,4 +80,5 @@ Aproksimācijas ar summu saīsināšana:
 ![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
 
 Koda izvade, ja k iet līdz 5
-![Teye_LD1 jpg](C:\Users\auzin\OneDrive\Desktop\teylor_kods_LD1.png)
+
+![teylor_kods_LD1](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
