@@ -14,6 +14,7 @@ Darba gaita:
 aproksimāciju ar summu un to saīsināt pēc sakarības, Ak = R * Ak-1
 
 2.Uzrakstīt programmu, lai tā uz ekrāna izvada:
+
     1.Summas izteiksmi ar ASCII simbolu palīdzību;
     2.Funkcijas definīcijas apgabala vērtības teksta komentāra veidā;
     3.Rekurences funkcionālā reizinātāja izteiksmi ar ASCII simbolu palīdzību;
