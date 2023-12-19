@@ -17,7 +17,7 @@ aproksimāciju ar summu un to saīsināt pēc sakarības, Ak = R * Ak-1
     8.Funkcijas vērtību f(x), aprēķins izmantojot funkcijas izteiksmi.
 
 3.Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
-``
+```
 c
 #include <stdio.h>
 #include <math.h>
@@ -72,7 +72,7 @@ double mans_sinuss(double x){
 
     return 0;
 }
-``
+```
 
 
 Aproksimācijas ar summu saīsināšana:
