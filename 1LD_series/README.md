@@ -28,7 +28,7 @@ aproksimāciju ar summu un to saīsināt pēc rekurences reizinājuma sakarības
 
 ## Risinnāšana un darba izpilde un tās rezultāti:
 
-Aproksimācijas ar summu saīsināšana:
+Rekurences reizinājuma iegūšana:
 
 ![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
 
@@ -114,7 +114,9 @@ Grafiks:
 ## Rezultātu iegūšanas attēlošana:
 
 Sin(x/2) aprēķināšana:
+
 Ievadi argumentu: 5
+
 sin(5/2)=0.60
 
 a0 = 2.5 
