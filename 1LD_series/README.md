@@ -92,7 +92,7 @@ double mans_sinuss(double x){
 
 
 
-Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3; S4):
+Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3):
 
 Gnuplot ievade:
 ```
@@ -146,6 +146,6 @@ ________________
         2
   16 * k + 8
 ```
-Rezultāta piemērs (Koda izvade, ja k iet līdz 5)
+Rezultāta piemērs (Koda izvade, ja k iet līdz 5 un x = 5)
 
 ![teylor_kods_LD1](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
