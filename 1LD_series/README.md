@@ -11,7 +11,7 @@ Izpētīt un implementēt Teilora rindas izteiksmi funkcijai sin(x/2), izmantojo
 ## Darba gaita:
 
 1.Pēc dotās "Skaitliskās metodes" teorijas, izveidot savai funkcijai 
-aproksimāciju ar summu un to saīsināt pēc sakarības, Ak = R * Ak-1
+aproksimāciju ar summu un to saīsināt pēc rekurences reizinājuma sakarības- Ak = R * Ak-1
 
 2.Uzrakstīt programmu, lai tā uz ekrāna izvada:
 
@@ -114,3 +114,35 @@ Grafiks:
 
 ![LD1_main_grafiks](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
 
+## Rezultātu iegūšanas attēlošana:
+
+Sin(x/2) aprēķināšana:
+Ievadi argumentu: 5
+sin(5/2)=0.60
+
+a0 = 2.5 
+S0 = 2.5
+
+a499 = -0.00
+S499 = 0.60
+
+a500 = 0.00
+S500 = 0.60
+```         
+         500
+        _____
+        \            k    2*k+1 
+          \      (-1) * x
+sin(5/2) = >  _______________________
+          /                  2*k+1
+        /       (2*k+1)! * 2
+        _____
+         k=0
+```
+Rekurences reizinātājs: 
+```
+        2
+       X
+________________
+        2
+  16 * k + 8
