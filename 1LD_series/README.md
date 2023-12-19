@@ -1,14 +1,14 @@
-1.Laboratorijas darba aizstāvēšana, "Skaitliskās metodes; Teilora rinda"
+#1.Laboratorijas darba aizstāvēšana, "Skaitliskās metodes; Teilora rinda"
 
 
-Man piešķirtā funkcija - y(x) = sin(x/2)
+##Man piešķirtā funkcija - y(x) = sin(x/2)
 
 
-Darba mērķis:
+##Darba mērķis:
 Izpētīt un implementēt Teilora rindas izteiksmi funkcijai sin(x/2), izmantojot programmu C valodā.
 
 
-Darba gaita:
+##Darba gaita:
 
 1.Pēc dotās "Skaitliskās metodes" teorijas, izveidot savai funkcijai 
 aproksimāciju ar summu un to saīsināt pēc sakarības, Ak = R * Ak-1
@@ -26,7 +26,7 @@ aproksimāciju ar summu un to saīsināt pēc sakarības, Ak = R * Ak-1
 
 3.Grafiski parādīt funkcijas izmainīšanos ar gnuplot palīdzību
 
-Risinnāšana un darba izpilde un tās rezultāti:
+##Risinnāšana un darba izpilde un tās rezultāti:
 
 Aproksimācijas ar summu saīsināšana:
 
