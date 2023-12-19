@@ -1,4 +1,4 @@
-#1.Laboratorijas darba aizstāvēšana, "Skaitliskās metodes; Teilora rinda"
+# 1.Laboratorijas darba aizstāvēšana, "Skaitliskās metodes; Teilora rinda"
 
 
 ##Man piešķirtā funkcija - y(x) = sin(x/2)
