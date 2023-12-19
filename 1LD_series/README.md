@@ -25,6 +25,12 @@ aproksimāciju ar summu un to saīsināt pēc sakarības, Ak = R * Ak-1
 
 3.Grafiski parādīt funkcijas izmainīšanos ar gnuplot palīdzību
 
+Risinnāšana un darba izpilde un tās rezultāti:
+
+Aproksimācijas ar summu saīsināšana:
+
+![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
+
 Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
 ```
 c
@@ -87,10 +93,6 @@ Koda izvade, ja k iet līdz 5
 
 ![teylor_kods_LD1](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
 
-Aproksimācijas ar summu saīsināšana:
-
-![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
-
 
 Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3; S4):
 
@@ -100,15 +102,14 @@ a0(x) = (pow(-1,0)*pow(x,2*0+1))/pow(2,2*0+1)*(-1) * pow(x,2)/((16*pow(0,2)+8*0)
 a1(x) = (pow(-1,1)*pow(x,2*1+1))/pow(2,2*1+1)*(-1) * pow(x,2)/((16*pow(1,2)+8*1))
 a2(x) = (pow(-1,2)*pow(x,2*2+1))/pow(2,2*2+1)*(-1) * pow(x,2)/((16*pow(2,2)+8*2))
 a3(x) = (pow(-1,3)*pow(x,2*3+1))/pow(2,2*3+1)*(-1) * pow(x,2)/((16*pow(3,2)+8*3))
-a4(x) = (pow(-1,4)*pow(x,2*4+1))/pow(2,2*4+1)*(-1) * pow(x,2)/((16*pow(4,2)+8*4))
 
 s0(x) = a0(x)
 s1(x) = a0(x) + a1(x)
 s2(x) = a0(x) + a1(x) + a2(x)
 s3(x) = a0(x) + a1(x) + a2(x) + a3(x)
-s4(x) = a0(x) + a1(x) + a2(x) + a3(x) + a4(x)
 ```
 
 Grafiks:
+
 ![LD1_main_grafiks](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
 
