@@ -1,0 +1,5 @@
+VirtualBox --startvm XP
+quartus
+git upload https://github.com/auzinska/RTR105/tree/main
+git clone https://github.com/auzinska/RTR105/tree/main
+git clone https://github.com/auzinska/RTR105
