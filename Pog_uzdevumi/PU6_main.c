@@ -1,4 +1,5 @@
 #include <stdio.h>
+//atsauce uz random funkciju izmatošanu C valodā, atrodama šeit: https://www.javatpoint.com/random-function-in-c
 
 //Bez argumentiem un bez return
 void printHello() {
@@ -21,7 +22,7 @@ int addNumbers(int a, int b) {
 }
 
 int main() {
-    //Funkcijas izsauksana
+    
     printHello();
 
     char message[] = "Ziņojums no funkcijas!";
