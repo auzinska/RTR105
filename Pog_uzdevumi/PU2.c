@@ -4,7 +4,6 @@ int main() {
 
     unsigned char skaitlis;
 
-    // Ievada naturālu skaitli
     printf("Ievadiet naturālu skaitli: ");
     scanf("%hhu", &skaitlis);
 
