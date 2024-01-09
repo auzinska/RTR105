@@ -125,5 +125,17 @@ Grafiks:
 Vienādojums uz kā tika balstīti programmas aprēķini:
 f(x) = 0∧sgn(f(x+δx)) ̸= sgn(f(x−δx)) => f(x+δx)·f(x−δx) < 0
 
+### Programmas darbūbas piemērs:
+
+Piebilde: kods strādā tikai tad, ja decimālskaitļi tiek pierakstīti ar punktu nevis komatu(piem. 4.17 nevis 4,17)
+
+Ievadde:
+
+    ievade a = 0
+    ievade b = 4.17
+    ievade c = 0.5
+    ievade precizitāte (delta_x) = 0.001
+
+Piemēra darbības attēlojums:
 
 ![LD2_Piemers](https://github.com/auzinska/RTR105/blob/main/2LD_roots/LD2_Piemers.png)
