@@ -29,10 +29,6 @@ pēc lietotāja noteikta diapazona, ņemot vērā nobīdi un precizitāti pēc i
 
 ## Risinnāšana un darba izpilde un tās rezultāti:
 
-Rekurences reizinājuma iegūšana:
-
-![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
-
 Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
 ```
 c
