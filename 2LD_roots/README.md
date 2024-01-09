@@ -29,67 +29,84 @@ pēc lietotāja noteikta diapazona, ņemot vērā nobīdi un precizitāti pēc i
 
 ## Risinnāšana un darba izpilde un tās rezultāti:
 
-Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
+Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/2LD_roots/rob_main.c)
 ```
 c
 #include <stdio.h>
 #include <math.h>
 
-double mans_sinuss(double x){
-    double a, S;
+int main() {
+    float a, b, bc, ac, nac, nbc, c, x, delta_x, funkca, funkcb, funkcx;
+
+    printf("Ievadiet funkcijas a vertibu:\n");
+    if (scanf("%f", &a) != 1) {
+        printf("ERROR: Netika ievadīts skaitlis!\n");
+        return 1;
+    }
+
+    printf("Ievadiet funkcijas b vertibu:\n");
+    if (scanf("%f", &b) != 1) {
+        printf("ERROR: Netika ievadīts skaitlis!\n");
+        return 1;
+    }
+
+    printf("Ievadiet funkciju nobīdes vertibu, kas nobīdīs abas funkciju, jeb c:\n");
+    if (scanf("%f", &c) != 1) {
+        printf("ERROR: Netika ievadīts skaitlis!\n");
+        return 1;
+    }
+
+    printf("Ievadiet precizitātes vērtību (vēlams, ka līdz 0.0001):\n");
+    if (scanf("%f", &delta_x) != 1) {
+        printf("ERROR: Netika ievadīts skaitlis!\n");
+        return 1;
+    }
+
     int k = 0;
 
-    a = (pow(-1,k)*pow(x,2*k+1))/pow(2,2*k+1); 
-    S = a;
-    
-    //Summas izteiksme
-    printf("k=%2d\t%.2f\t%8.2f\t%8.2f\n", k, x, a, S);
+    funkca = sin(a / 2);
+    funkcb = sin(b / 2);
+    ac = a - c;
+    bc = b - c;
 
-    //Funkcijas definīcijas apgabala vērtības
-    printf("Funkcijas definīcijas apgabala vērtības:\n");
-    printf("x = %.2f\n", x);
-    printf("y = sin(x/2) = %.2f\n", sin(x/2));
-    
-    while (k < 500){
+    if (funkca * funkcb > 0) {
+        printf("Intervālā [%.2f;%.2f] sin(x/2) funkcijai pēc nobīdes %.2f sakņu nav (vai tajā ir pāru sakņu skaits).\n", a, b, c);
+        return 1;
+    }
+
+    printf("Intervālā [%.2f;%.2f] sin(x/2) funkcijai pēc nobīdes %.2f ar precizitāti delta_x=%.4f\n", ac, bc, c, delta_x);
+
+    printf("sin(%7.3f)=%7.3f\t\t\t\t", a, sin(a));
+    printf("sin(%7.3f)=%7.3f\n", b, sin(b));
+
+    while ((b - a) > delta_x) {
         k++;
-        a = a*((-1)*pow(x,2)/((16*pow(k,2)+8*k)));
-        S = S + a;
-        
-        //Summas izteiksme atkal
-        printf("k=%2d\t%.2f\t%8.2f\t%8.2f\n", k, x, a, S);
-    }
-    
-    // 3. Rekurences funkcionālā reizinātāja izteiksmi ar ASCII simbolu palīdzību
-    printf("\nRekurences funkcionālā reizinātāja izteiksmi:\n");
-    printf("a_k = a_(k-1) * ((-1) * x^2) / (16k^2 + 8k)\n");
+        x = (a + b) / 2.0;
 
-    return S;
+        if (funkca * sin(x / 2) > 0)
+            a = x;
+        else
+            b = x;
+
+        printf("%2d. iterācija: sin(%7.3f)=%7.3f\t", k, a, sin(a / 2));
+        printf("sin(%7.3f)=%7.3f\t", x, sin(x / 2));
+        printf("sin(%7.3f)=%7.3f\n", b, sin(b / 2));
     }
 
-    int main(){
-        double x, y, yy;
+    nac = sin((a - c) / 2);
+    nbc = sin((b - c) / 2);
 
-    printf("Ievadiet x vērtību: ");
-    scanf("%lf", &x);
-
-    y = sin(x/2);
-
-   
-    //Aprēķinātās summas pēdējā locekļa (piecsimtā locekķa) vērtība
-    yy = mans_sinuss(x);
-    printf("Aprēķinātās summas pēdējā locekļa vērtība: %.2f\n", yy);
-
-    printf("\nFunkcijas vērtība izmantojot Teilora rindas izteiksmi: %.2f\n", yy);
-
-    printf("Funkcijas vērtība izmantojot sin(x/2): %.2f\n", y);
+    printf("Sakne atrodas pie x=%.3f, jo sin(x) ir %.3f pēc nobīdes c=%.3f, ir a=%.3f, b=%.3f ar precizitāti delta_x=%.4f\n", x, sin(x / 2), c, nac, nbc, delta_x);
 
     return 0;
 }
+
 ```
+Piebilde: Kods nav kā Ortusā dotais kods, jo šajā kodā ir savienots galvenās funkcijas kods ar nobīdes kodu vienā. 
+Īsāk sakot, divu kodu vietā tika uzrakstīts viens.
 
 
-
-Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3):
+Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); ):
 
 Gnuplot ievade:
 ```
@@ -106,7 +123,7 @@ s3(x) = a0(x) + a1(x) + a2(x) + a3(x)
 
 Grafiks:
 
-![LD1_main_grafiks](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
+![LD2_grafiks](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
 
 ## Rezultātu iegūšanas attēlošana:
 
