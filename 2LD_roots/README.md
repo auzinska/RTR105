@@ -106,24 +106,19 @@ Piebilde: Kods nav kā Ortusā dotais kods, jo šajā kodā ir savienots galven�
 Īsāk sakot, divu kodu vietā tika uzrakstīts viens.
 
 
-Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); ):
+Grafiskā attēlošana ar gnuplot (Ir redzami grafiki y = sin(x/2); y = 1; y = sin(x/2)-0.5; y = 0.5 ):
 
 Gnuplot ievade:
 ```
-a0(x) = (pow(-1,0)*pow(x,2*0+1))/pow(2,2*0+1)*(-1) * pow(x,2)/((16*pow(0,2)+8*0))
-a1(x) = (pow(-1,1)*pow(x,2*1+1))/pow(2,2*1+1)*(-1) * pow(x,2)/((16*pow(1,2)+8*1))
-a2(x) = (pow(-1,2)*pow(x,2*2+1))/pow(2,2*2+1)*(-1) * pow(x,2)/((16*pow(2,2)+8*2))
-a3(x) = (pow(-1,3)*pow(x,2*3+1))/pow(2,2*3+1)*(-1) * pow(x,2)/((16*pow(3,2)+8*3))
-
-s0(x) = a0(x)
-s1(x) = a0(x) + a1(x)
-s2(x) = a0(x) + a1(x) + a2(x)
-s3(x) = a0(x) + a1(x) + a2(x) + a3(x)
+plot [10:-10] sin(x/2)
+replot 1
+replot sin(x/2) - 0.5
+replot 0.5
 ```
 
 Grafiks:
 
-![LD2_grafiks](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
+![LD2_grafiks](https://github.com/auzinska/RTR105/blob/main/2LD_roots/LD_2_grafiks.png)
 
 ## Rezultātu iegūšanas attēlošana:
 
