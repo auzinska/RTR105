@@ -120,41 +120,10 @@ Grafiks:
 
 ![LD2_grafiks](https://github.com/auzinska/RTR105/blob/main/2LD_roots/LD_2_grafiks.png)
 
-## Rezultātu iegūšanas attēlošana:
+## Rezultātu un programmas darbības attēlošana:
 
-Sin(x/2) aprēķināšana:
+Vienādojums uz kā tika balstīti programmas aprēķini:
+f(x) = 0∧sgn(f(x+δx)) ̸= sgn(f(x−δx)) => f(x+δx)·f(x−δx) < 0
 
-Ievadi argumentu: 5
 
-sin(5/2)=0.60
-
-a0 = 2.5 
-S0 = 2.5
-
-a499 = -0.00
-S499 = 0.60
-
-a500 = 0.00
-S500 = 0.60
-```         
-         500
-        _____
-        \            k    2*k+1 
-          \      (-1) * x
-sin(5/2) = >  _______________________
-          /                  2*k+1
-        /       (2*k+1)! * 2
-        _____
-         k=0
-```
-Rekurences reizinātājs: 
-```
-        2
-       X
-________________
-        2
-  16 * k + 8
-```
-Rezultāta piemērs (Koda izvade, ja k iet līdz 5 un x = 5)
-
-![teylor_kods_LD1](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
+![teylor_kods_LD2](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
