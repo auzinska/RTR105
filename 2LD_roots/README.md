@@ -96,7 +96,7 @@ int main() {
     nac = sin((a - c) / 2);
     nbc = sin((b - c) / 2);
 
-    printf("Sakne atrodas pie x=%.3f, jo sin(x) ir %.3f pēc nobīdes c=%.3f, ir a=%.3f, b=%.3f ar precizitāti delta_x=%.4f\n", x, sin(x / 2), c, nac, nbc, delta_x);
+    printf("Sakne atrodas pie x=%.3f, jo sin(x/2) ir %.3f pēc nobīdes c=%.3f, ir a=%.3f, b=%.3f ar precizitāti delta_x=%.4f\n", x, sin(x / 2), c, nac, nbc, delta_x);
 
     return 0;
 }
@@ -107,7 +107,7 @@ Piebilde: Kods nav kā Ortusā dotais kods, jo šajā kodā ir savienots galven�
 
 
 ## Grafiskā attēlošana ar gnuplot 
-(Ir redzami grafiki y = sin(x/2); y = 1; y = sin(x/2)-0.5; y = 0.5 ):
+(Ir redzami grafiki y = sin(x/2); y = 1; y = sin(x/2)-0.5; y = 0.5; y = 0):
 
 Gnuplot ievade:
 ```
@@ -115,6 +115,7 @@ plot [10:-10] sin(x/2)
 replot 1
 replot sin(x/2) - 0.5
 replot 0.5
+replot 0
 ```
 
 Grafiks:
@@ -140,3 +141,11 @@ Ievadde:
 Piemēra darbības attēlojums:
 
 ![LD2_Piemers](https://github.com/auzinska/RTR105/blob/main/2LD_roots/LD2_Piemers.png)
+
+Rezultātu iespējamās izvades:
+
+    Sakne atrodas pie x=*aprēķinātā atbilde*, jo sin(x/2) ir *atbilde balstoties uz nobīdi* pēc nobīdes c=*nobīdes vērtība*, ir a=*diapazona sākuma vērtība*, b=*diapazona beidu vērtība* ar precizitāti delta_x=*precizitātes vērtība*
+
+Ja nav ievadīts sakarīgs skaitlis, vai kāds cits simbols, kas nav skaitlis:
+
+    "ERROR: Netika ievadīts skaitlis!
