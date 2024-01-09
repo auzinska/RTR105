@@ -106,7 +106,8 @@ Piebilde: Kods nav kā Ortusā dotais kods, jo šajā kodā ir savienots galven�
 Īsāk sakot, divu kodu vietā tika uzrakstīts viens.
 
 
-Grafiskā attēlošana ar gnuplot (Ir redzami grafiki y = sin(x/2); y = 1; y = sin(x/2)-0.5; y = 0.5 ):
+## Grafiskā attēlošana ar gnuplot 
+(Ir redzami grafiki y = sin(x/2); y = 1; y = sin(x/2)-0.5; y = 0.5 ):
 
 Gnuplot ievade:
 ```
