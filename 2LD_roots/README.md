@@ -150,4 +150,4 @@ Rezultātu iespējamās izvades:
 
 Ja nav ievadīts sakarīgs skaitlis, vai kāds cits simbols, kas nav skaitlis:
 
-    "ERROR: Netika ievadīts skaitlis!
+    ERROR: Netika ievadīts skaitlis!
