@@ -5,26 +5,27 @@
 
 
 ## Darba mērķis:
-Izpētīt un implementē dihotomijas metodifunkcijai sin(x/2), atrodot funkcijas saknes noteiktā diapazonā ar noteiktu precizitāti, izmantojot programmu C valodā.
+Izpētīt un implementē dihotomijas metodifunkcijai sin(x/2), atrodot funkcijas saknes 
+noteiktā diapazonā ar noteiktu precizitāti, izmantojot programmu C valodā.
 
 
 ## Darba gaita:
 
-1.Pēc dotās "Skaitliskās metodes" teorijas, izveidot savai funkcijai 
-aproksimāciju ar summu un to saīsināt pēc rekurences reizinājuma sakarības- Ak = R * Ak-1
+1.Pēc dotās "Skaitliskās metodes" teorijas, savai funkcijai atrast saknes 
+pēc lietotāja noteikta diapazona, ņemot vērā nobīdi un precizitāti pēc ievades.
 
 2.Uzrakstīt programmu, lai tā uz ekrāna izvada:
 
-    1.Summas izteiksmi ar ASCII simbolu palīdzību;
-    2.Funkcijas definīcijas apgabala vērtības teksta komentāra veidā;
-    3.Rekurences funkcionālā reizinātāja izteiksmi ar ASCII simbolu palīdzību;
-    4.Dialogu ar lietotāju x vērtības iegūšanai;
-    5.Aprēķinātās summas iepriekšpēdējā locekļa vērtību;
-    6.Aprēķinātās summas pēdējā locekļa (piecsimtā locekķa) vērtību;
-    7.Funkcijas vērtību f(x), aprēķins izmantojot Teilora rindas izteiksmi;
-    8.Funkcijas vērtību f(x), aprēķins izmantojot funkcijas izteiksmi.
+    1.dialogu ar lietotāju a vērtības iegūšanai
+    2.dialogu ar lietotāju b vērtības iegūšanai
+    3.dialogu ar lietotāju c vērtības iegūšanai
+    4.dialogu ar lietotāju precizitātes vērtības iegūšanai
+    5.aprēķināto x vērtību, kas atbilst f(x)=c vienādojumam, x starp a un b
+    6.aprēķināto f(x) vērtību šim x
+    7.nepieciešamo iterāciju skaitu, lai aprēķinātu šo x vērtību ar uzdoto precizitāti
 
-3.Grafiski parādīt funkcijas izmainīšanos ar gnuplot palīdzību
+
+3.Grafiski parādīt funkciju un funkciju pēc nobīdes ar gnuplot palīdzību
 
 ## Risinnāšana un darba izpilde un tās rezultāti:
 
