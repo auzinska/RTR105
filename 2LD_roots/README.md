@@ -144,7 +144,9 @@ Piemēra darbības attēlojums:
 
 Rezultātu iespējamās izvades:
 
-    Sakne atrodas pie x=*aprēķinātā atbilde*, jo sin(x/2) ir *atbilde balstoties uz nobīdi* pēc nobīdes c=*nobīdes vērtība*, ir a=*diapazona sākuma vērtība*, b=*diapazona beidu vērtība* ar precizitāti delta_x=*precizitātes vērtība*
+    Sakne atrodas pie x=*aprēķinātā atbilde*, jo sin(x/2) ir *atbilde balstoties
+    uz nobīdi* pēc nobīdes c=*nobīdes vērtība*, ir a=*diapazona sākuma vērtība*, 
+    b=*diapazona beidu vērtība* ar precizitāti delta_x=*precizitātes vērtība*
 
 Ja nav ievadīts sakarīgs skaitlis, vai kāds cits simbols, kas nav skaitlis:
 
