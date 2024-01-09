@@ -126,4 +126,4 @@ Vienādojums uz kā tika balstīti programmas aprēķini:
 f(x) = 0∧sgn(f(x+δx)) ̸= sgn(f(x−δx)) => f(x+δx)·f(x−δx) < 0
 
 
-![teylor_kods_LD2](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
+![LD2_Piemers](https://github.com/auzinska/RTR105/blob/main/2LD_roots/LD2_Piemers.png)
