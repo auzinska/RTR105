@@ -19,11 +19,32 @@ Pielietojot kādu no kārtošanas algoritmiem, saprast kā izvēlēto algoritmu 
     7.sakārtoto simbolu rindu vienā rindā un atbilstošus ASCII skaitļus nākamajā rindā
       rindas kārtošana alfabēta secībā - A, B, C, ..., a, b, c, ... (saskaņā ar ASCII skaitļiem)
 
-3.Grafiski parādīt funkcijas izmainīšanos ar gnuplot palīdzību
+3.Automātiski aizsūtīt  datus uz gnoplot, lai izveidotu histogrammu.
 
-## Risinnāšana un darba izpilde un tās rezultāti:
+## Programmas darbības apraksts
 
-Rekurences reizinājuma iegūšana:
+Tika izveidotas divas programmas, viena, kurā tiek izpildītas tikai darba gaitas 2. punkta prasības un otra, kas dara visu prasīto. Autors izvēlējās aizstāvēšanā pievienot abu programmu kodus, lai labāk saprastu algoritma pielietošanu un integrāciju kodā.
+
+Programmās tika izmantots "burbuļu" kārtošanas jeb "bubble sorting" algoritms. Šajā algoritmā secīgi salīdzina un samaina "kaimiņu" elementus, līdz visi elementi ir sakārtoti. Savukārt, pirms elementus var sakārtot, tiem ir jānoskaidro "ASCI" vērtība, kas tika izdarīts ar %d formātu, printf funkcija izvada decimālo vērtību (ASCI vērtību).
+
+Nākamais solis ir kārtošana un tas ļoti vienkārši tika izdarīts salīdzinot vērtības:
+```
+for (int i = 0; i < garums - 1; i++) {
+        for (int j = i + 1; j < garums; j++) {
+```
+
+Tad var samainīt elementus ar vietām:
+```
+void karto_alfabeta_seciba(char *simboli, int garums) {
+    for (int i = 0; i < garums - 1; i++) {
+        for (int j = i + 1; j < garums; j++) {
+            if (simboli[i] > simboli[j]) {
+                // Samaina vietām, ja nepieciešams
+                char temp = simboli[i];
+                simboli[i] = simboli[j];
+                simboli[j] = temp;
+```
+Šī risinājuma pilnais kods (atrodams github:)
 
 ![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
 
