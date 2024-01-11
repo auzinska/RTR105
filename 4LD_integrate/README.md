@@ -182,7 +182,7 @@ Wolfram alpha rezultāti, ja a = 0, b = 2*pi
 
 ![int_b=2pi](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/int_b%3Dpi2.png)
 
-Wolfram alpha rezultāti, ja a = 0, b = 4*pi
+Wolfram alpha rezultāti, ja a = 0, b = 4*pi. Rezultāts ir nulle, jo tiek saskaitīti divi vienādi laukumi ar skaitliski pretējām vērtībām.
 
 ![int_b=4pi](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/int_b%3D4pi.png)
 
