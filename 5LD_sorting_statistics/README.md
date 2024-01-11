@@ -209,7 +209,7 @@ int main() {
 
 Programmas darbība no lietotāja puses ar automātisko gnuplot ievadi:
 
-![LD5_Kodapiemers_ar_gnuplot_pats_kods](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
+![LD5_Kodapiemers_ar_gnuplot_pats_kods](https://github.com/auzinska/RTR105/blob/main/5LD_sorting_statistics/LD5_Kodapiemers_ar_gnuplot_pats_kods.png)
 
 Gnuplot:
 
