@@ -32,7 +32,7 @@ izdarīt to divos  veidos un grafiski salīdzināt.
 
 ## Programmas darbība
 
-Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/LD3_derivative/atv_main.c)
+Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/3LD_derivative/atv_main.c)
 
 Kods teksta formā:
 
@@ -111,7 +111,7 @@ derivative.dat fails pēc programmas izpildes:
 
 ![LD3_kodapiemers2](https://github.com/auzinska/RTR105/blob/main/3LD_derivative/LD3_kodapiemers2.png)
 
-Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3):
+Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); sin'(x/2) pēc gnuplot; sin'(x/2) pēc analītiskās formas; sin'(x/2) pēc skaitliskās formas; sin''(x/2) pēc analītiskās formas; sin''(x/2) pēc skaitliskās formas;):
 
 Gnuplot ievade:
 ```
