@@ -24,11 +24,11 @@ Aprēķināt laukumu grafikam y = sin(x/2) (starp f(x) līknes un x asi) ar inte
 
 3.Pierādīt iegūtos rezultātus ar Wolframalpha grafiku un integrēšanas rezultātiem
 
-## Risinnāšana un darba izpilde un tās rezultāti:
+## Risināšana
 
-Rekurences reizinājuma iegūšana:
+Taisnstūra metode:
+![image](https://github.com/auzinska/RTR105/assets/50238747/a53dc636-0aae-4e99-a131-aa8e6bcb2901)
 
-![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
 
 Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
 ```
