@@ -26,13 +26,31 @@ Aprēķināt laukumu grafikam y = sin(x/2) (starp f(x) līknes un x asi) ar inte
 
 ## Risināšana
 
+Visu trīs metožu pamatprincips ir sadalīt laukumu starp f(x) līknes un x asi mazākās daļās, izrēķināt to daļu laukumu un tad saskaitīt visu kopā. Piebilde: šis nav perfekts raksturojums.
+
 Taisnstūra metode:
 
 Taisnstūra metodei pielietotā sakarība, kur taisnstūra augstums ir funkcijas vērtība un platums ir intervāla garums:
 
-        ![image](https://github.com/auzinska/RTR105/assets/50238747/5b178a5a-2f1a-45e9-a25d-01a40c699312)
+![image](https://github.com/auzinska/RTR105/assets/50238747/5b178a5a-2f1a-45e9-a25d-01a40c699312)
+
+Trapeču metodei pielietotā sakarība:
+
+![image](https://github.com/auzinska/RTR105/assets/50238747/7c68db0c-3586-4c47-81a6-8c0dd05163dc)
+
+Katram no šiem noteikumiem mēs varam iegūt precīzāku tuvinājumu, sadalot intervālu [a, b] n apakšintervālos. Katram no šiem apakšintervāliem tiek aprēķināts tuvinājums, un visi rezultāti tiek saskaitīti kopā. Šo pieeju sauc par salikto, paplašināto vai iterēto noteikumu. Šajā gadījumā apakšintervāliem ir forma, kur augstums ir noteikts intervāla garums.
+
+Var tikt izmantoti tāda paša garuma apakšintervālus kā h, bet ir iespējams izmantot arī dažāda garuma intervālus, tādējādi pielāgojot pieeju konkrētajiem uzdevuma nosacījumiem, piemēram, kā šis. 
+
+Simpsona metodei pielietotā sakarība:
 
 
+![image](https://github.com/auzinska/RTR105/assets/50238747/4c10329d-ee2d-4edb-bc70-eda3f23edb00)
+
+
+Šeit tiek izmantoti daļēji izliektu daudzskaitļu formulu tuvinājumi, lai aprēķinātu noteiktu integrāļa vērtību. Šī metode parasti izmanto pāra skaitu intervālu un izmanto katru divu blakus esošo intervālu, lai aprēķinātu integrāļa vērtību.
+
+## Metožu pielietošana programmā
 
 Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
 ```
