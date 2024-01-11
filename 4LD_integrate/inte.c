@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
+
+//kods ir muļķu drošs :)
+
 double taisnstura_metode(double a, double b, int n) {
     double h = (b - a) / n;
     double integr = 0;
