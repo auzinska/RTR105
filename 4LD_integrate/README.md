@@ -178,39 +178,7 @@ Piebilde: lai rezultāti būtu precīzi, precizitātei ir jābūt vismaz 1e-6. K
 
 ## Rezultātu pierādīšana ar Wolpramalpha
 
-Sin(x/2) aprēķināšana:
+![LD4_Kodapiemers1](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/LD4_kodapiemers1.png)
 
-Ievadi argumentu: 5
+![LD4_Kodapiemers1](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/LD4_kodapiemers1.png)
 
-sin(5/2)=0.60
-
-a0 = 2.5 
-S0 = 2.5
-
-a499 = -0.00
-S499 = 0.60
-
-a500 = 0.00
-S500 = 0.60
-```         
-         500
-        _____
-        \            k    2*k+1 
-          \      (-1) * x
-sin(5/2) = >  _______________________
-          /                  2*k+1
-        /       (2*k+1)! * 2
-        _____
-         k=0
-```
-Rekurences reizinātājs: 
-```
-        2
-       X
-________________
-        2
-  16 * k + 8
-```
-Rezultāta piemērs (Koda izvade, ja k iet līdz 5 un x = 5)
-
-![teylor_kods_LD1](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
