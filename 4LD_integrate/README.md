@@ -52,9 +52,10 @@ Simpsona metodei pielietotā sakarība:
 
 ## Metožu pielietošana programmā
 
-Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
+Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/4LD_integrate/inte_main.c)
+
+Kods teksta formātā:
 ```
-c
 #include <stdio.h>
 #include <math.h>
 
