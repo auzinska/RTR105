@@ -19,22 +19,18 @@ izdarīt to divos  veidos un grafiski salīdzināt.
     3.dialogu ar lietotāju precizitātes vērtības iegūšanai
     4.f(x) vērtības, x no a līdz b (aprēķināt, attēlot un saglabāt derivative .dat failā)
     5.f’(x) vērtības, x no a līdz b (aprēķināt, attēlot un saglabāt derivative .dat failā;
-    izmantot atvasinājuma analītisko formulu)
+        izmantot atvasinājuma analītisko formulu)
     6.f’(x) vērtības, x no a līdz b (aprēķināt, attēlot un saglabāt derivative .dat failā;
-    izmantot skaitlisko atvasinājumu - diferencēšana un priekšu)
+        izmantot skaitlisko atvasinājumu - diferencēšana un priekšu)
     7.f”(x) vērtības, x no a līdz b (aprēķināt, attēlot un saglabāt derivative .dat failā;
-    izmantot atvasinājuma analītisko formulu)
+        izmantot atvasinājuma analītisko formulu)
     8.f”(x) vērtības, x no a līdz b (aprēķināt, attēlot un saglabāt derivative .dat failā;
-    izmantot skaitlisko atvasinājumu - diferencēšana un priekšu)
+        izmantot skaitlisko atvasinājumu - diferencēšana un priekšu)
 
 
 3.Grafiski parādīt funkcijas izmainīšanos ar gnuplot palīdzību
 
-## Risinnāšana un darba izpilde un tās rezultāti:
-
-Rekurences reizinājuma iegūšana:
-
-![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
+## Programmas darbība
 
 Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
 ```
