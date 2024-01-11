@@ -6,25 +6,23 @@
 
 ## Darba mērķis:
 
-Noskaidrot integrāļa vērtību
+Aprēķināt laukumu grafikam y = sin(x/2) (starp f(x) līknes un x asi) ar integrēšanas metodi trīs veidos (pēc taisnstūra, trapeces un Simpsona metodes).
 
 ## Darba gaita:
 
-1.Pēc dotās "Skaitliskās metodes" teorijas, izveidot savai funkcijai 
-aproksimāciju ar summu un to saīsināt pēc rekurences reizinājuma sakarības- Ak = R * Ak-1
+1.Pēc dotās "Skaitliskās metodes" teorijas, sagatavot formulas visām trim metodēm (taisnstūra, trapeces un Simpsona metodei) un pārrakstīt tās koda veidā.
 
 2.Uzrakstīt programmu, lai tā uz ekrāna izvada:
 
-    1.Summas izteiksmi ar ASCII simbolu palīdzību;
-    2.Funkcijas definīcijas apgabala vērtības teksta komentāra veidā;
-    3.Rekurences funkcionālā reizinātāja izteiksmi ar ASCII simbolu palīdzību;
-    4.Dialogu ar lietotāju x vērtības iegūšanai;
-    5.Aprēķinātās summas iepriekšpēdējā locekļa vērtību;
-    6.Aprēķinātās summas pēdējā locekļa (piecsimtā locekķa) vērtību;
-    7.Funkcijas vērtību f(x), aprēķins izmantojot Teilora rindas izteiksmi;
-    8.Funkcijas vērtību f(x), aprēķins izmantojot funkcijas izteiksmi.
+    1.dialogu ar lietotāju a vērtības iegūšanai
+    2.dialogu ar lietotāju b vērtības iegūšanai
+    3.dialogu ar lietotāju precizitātes vērtības iegūšanai
+    4.laukuma (starp f(x) un x ass) vērtību (aprēķins izmantojot taisnstūru metodi)
+    5.laukuma (starp f(x) un x ass) vērtību (aprēķins izmantojot trapeču metodi)
+    6.laukuma (starp f(x) un x ass) vērtību (aprēķins izmantojot Simpsona metodi)
 
-3.Grafiski parādīt funkcijas izmainīšanos ar gnuplot palīdzību
+
+3.Pierādīt iegūtos rezultātus ar Wolframalpha grafiku un integrēšanas rezultātiem
 
 ## Risinnāšana un darba izpilde un tās rezultāti:
 
