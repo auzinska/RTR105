@@ -115,20 +115,18 @@ Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3):
 
 Gnuplot ievade:
 ```
-a0(x) = (pow(-1,0)*pow(x,2*0+1))/pow(2,2*0+1)*(-1) * pow(x,2)/((16*pow(0,2)+8*0))
-a1(x) = (pow(-1,1)*pow(x,2*1+1))/pow(2,2*1+1)*(-1) * pow(x,2)/((16*pow(1,2)+8*1))
-a2(x) = (pow(-1,2)*pow(x,2*2+1))/pow(2,2*2+1)*(-1) * pow(x,2)/((16*pow(2,2)+8*2))
-a3(x) = (pow(-1,3)*pow(x,2*3+1))/pow(2,2*3+1)*(-1) * pow(x,2)/((16*pow(3,2)+8*3))
-
-s0(x) = a0(x)
-s1(x) = a0(x) + a1(x)
-s2(x) = a0(x) + a1(x) + a2(x)
-s3(x) = a0(x) + a1(x) + a2(x) + a3(x)
+set grid
+plot [0:10] sin(x/2)
+replot [0:10] cos(x) title "sin'(x/2)"
+replot "derivative.dat" every ::1 using 1:3 with lines title "sin'(x/2) (analytical formula)"
+replot "derivative.dat" every ::1 using 1:4 with lines title "sin'(x/2) (finite difference)"
+replot "derivative.dat" every ::1 using 1:5 with lines title "sin''(x/2) (analytical formula)"
+replot "derivative.dat" every ::1 using 1:6 with lines title "sin''(x/2) (finite difference)"
 ```
 
 Grafiks:
 
-![LD1_main_grafiks](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
+![LD1_main_grafiks](https://github.com/auzinska/RTR105/blob/main/3LD_derivative/LD3_grafiks.png)
 
 ## Rezultātu iegūšanas attēlošana:
 
