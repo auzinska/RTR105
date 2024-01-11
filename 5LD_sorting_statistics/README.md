@@ -114,9 +114,11 @@ int main() {
 
 ```
 
-Programmas darbība no lietotāja puses:
+Programmas darbība no lietotāja puses(1.ievade: 53421; 2.ievade: a5b2c; 3.ievade: .5a,"):
 
-![LD5_kodapiemers](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
+![LD5_kodapiemers](https://github.com/auzinska/RTR105/blob/main/5LD_sorting_statistics/LD5_kodapiemers.png)
+
+
 
 Risinājuma kods, kur iegūtās vērtības tiek automātiski sūtītas uz gnuplot (atrodams github: https://github.com/auzinska/RTR105/blob/main/5LD_sorting_statistics/sort_gnup.c):
 
