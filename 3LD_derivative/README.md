@@ -32,65 +32,84 @@ izdarīt to divos  veidos un grafiski salīdzināt.
 
 ## Programmas darbība
 
-Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
+Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/LD3_derivative/atv_main.c)
+
+Kods teksta formā:
+
 ```
-c
 #include <stdio.h>
 #include <math.h>
 
-double mans_sinuss(double x){
-    double a, S;
-    int k = 0;
+int main()
+{
+    FILE *pFile;
+    float a, b, x, delta_x, sin_prim, delta_y, dub_y;
 
-    a = (pow(-1,k)*pow(x,2*k+1))/pow(2,2*k+1); 
-    S = a;
-    
-    //Summas izteiksme
-    printf("k=%2d\t%.2f\t%8.2f\t%8.2f\n", k, x, a, S);
-
-    //Funkcijas definīcijas apgabala vērtības
-    printf("Funkcijas definīcijas apgabala vērtības:\n");
-    printf("x = %.2f\n", x);
-    printf("y = sin(x/2) = %.2f\n", sin(x/2));
-    
-    while (k < 500){
-        k++;
-        a = a*((-1)*pow(x,2)/((16*pow(k,2)+8*k)));
-        S = S + a;
-        
-        //Summas izteiksme atkal
-        printf("k=%2d\t%.2f\t%8.2f\t%8.2f\n", k, x, a, S);
-    }
-    
-    // 3. Rekurences funkcionālā reizinātāja izteiksmi ar ASCII simbolu palīdzību
-    printf("\nRekurences funkcionālā reizinātāja izteiksmi:\n");
-    printf("a_k = a_(k-1) * ((-1) * x^2) / (16k^2 + 8k)\n");
-
-    return S;
+    // lietotāja ievade
+    printf("Ievadiet skaitlisku a vērtību (piem. 0): ");
+    if (scanf("%f", &a) != 1)
+    {
+        printf("Nepareiza ievade. Ievadiet skaitli.\n");
+        return 1; // Beidz programmu ar kļūdas kodu
     }
 
-    int main(){
-        double x, y, yy;
+    printf("Ievadiet skaitlisku b vērtību (piem. 6.28): ");
+    if (scanf("%f", &b) != 1)
+    {
+        printf("Nepareiza ievade. Ievadiet skaitli.\n");
+        return 1; // Beidz programmu ar kļūdas kodu
+    }
 
-    printf("Ievadiet x vērtību: ");
-    scanf("%lf", &x);
+    // Iegūst precizitātes no lietotāja
+    printf("Ievadiet precizitātes vērtību (līdz 0.0001): ");
+    if (scanf("%f", &delta_x) != 1 || delta_x <= 0)
+    {
+        printf("Nepareiza ievade. Ievadiet pozitīvu skaitli lielāku par 0.\n");
+        return 1; // Beidz programmu ar kļūdas kodu
+    }
 
-    y = sin(x/2);
+    // Atvēr failu
+    pFile = fopen("derivative.dat", "w");
+    if (pFile == NULL)
+    {
+        printf("Nevar atvērt failu derivative.dat.\n");
+        return 1; // Beidz programmu ar kļūdas kodu
+    }
 
-   
-    //Aprēķinātās summas pēdējā locekļa (piecsimtā locekķa) vērtība
-    yy = mans_sinuss(x);
-    printf("Aprēķinātās summas pēdējā locekļa vērtība: %.2f\n", yy);
+    // header failā
+    fprintf(pFile, "\tx\t\tsin(x/2)\t\tsin\'(x/2)\t\tdelta_y\t\tdub_y\n");
 
-    printf("\nFunkcijas vērtība izmantojot Teilora rindas izteiksmi: %.2f\n", yy);
+    x = a;
+    while (x < b)
+    {
+        // Atvasinājuma analītiskais aprēķins
+        sin_prim = cos(x/2);
 
-    printf("Funkcijas vērtība izmantojot sin(x/2): %.2f\n", y);
+        // Atvasinājuma skaitliskais aprēķins
+        delta_y = ((sin((x + delta_x) / 2) - sin(x / 2)) / (delta_x / 2));
+        dub_y = (delta_y / sin(x/2)) * delta_x;
+
+        // dati uz failu
+        fprintf(pFile, "%12.2f\t%12.2f\t%20.2f\t%20.2f\t%20.2f\n", x, sin(x/2), sin_prim, delta_y, dub_y);
+
+        x += delta_x;
+    }
+
+    // Aizver failu
+    fclose(pFile);
 
     return 0;
 }
+
 ```
 
+Koda darbība no lietotāja puses:
 
+![LD3_kodapiemers1](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
+
+derivative.dat fails pēc programmas izpildes:
+
+![LD3_kodapiemers2](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
 
 Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3):
 
