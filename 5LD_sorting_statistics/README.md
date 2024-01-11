@@ -207,9 +207,13 @@ int main() {
 
 ```
 
-![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
+Programmas darbība no lietotāja puses ar automātisko gnuplot ievadi:
 
+![LD5_Kodapiemers_ar_gnuplot_pats_kods](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
 
+Gnuplot:
+
+![LD5_GNUPLOT](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
 
 Rezultāta piemērs (Koda izvade, ja k iet līdz 5 un x = 5)
 
