@@ -178,8 +178,13 @@ Piebilde: lai rezultāti būtu precīzi, precizitātei ir jābūt vismaz 1e-6. K
 
 ## Rezultātu pierādīšana ar Wolpramalpha
 
-![int_b=2pi](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/LD4_kodapiemers1.png)
+Wolfram alpha rezultāti, ja a = 0, b = 2*pi
+
+![int_b=2pi](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/int_b%3Dpi2.png)
+
+Wolfram alpha rezultāti, ja a = 0, b = 4*pi
 
 ![int_b=4pi](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/int_b%3D4pi.png)
 
+Rezultātu analīze: Rezuultāti sakrīt ar programmā izvadīto, ja skaitļus noapaļo līdz simtdaļām, jo pagaidām pēc noklusējuma programmas izvadē ir skaitļi līdz miljondaļai aiz komata, lai rezultāti būtu maksimāli precīzi. Ņemot šo vērā, precizitātei arī ir jāsakrīt ar vienu miljono daļu.
 
