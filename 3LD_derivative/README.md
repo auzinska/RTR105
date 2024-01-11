@@ -132,5 +132,7 @@ Grafiks:
 
 ![LD3_LD3_grafiks](https://github.com/auzinska/RTR105/blob/main/3LD_derivative/LD3_grafiks.png)
 
-
+## Pielikums
+1. Gnuplot ievades piemērs. RĪGAS TEHNISKĀs UNIVERSITĀTEs ELEKTRONIKAS UN TELEKOMUNIKĀCIJU FAKULTĀTE
+Priekšmeta "Datormācība  e-studiju vietne. Pieejams Ortusā: https://estudijas.rtu.lv/file.php/360800/RTR105_2019_2020_L19_20200118_14_50.pdf .
 
