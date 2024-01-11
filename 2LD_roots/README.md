@@ -1,130 +1,153 @@
-1.Laboratorijas darba aizstāvēšana, "Skaitliskās metodes; Teilora rinda"
-Man piešķirtā funkcija - y(x) = sin(x/2)
-Darba mērķis:
-Izpētīt un implementēt Teilora rindas izteiksmi funkcijai sin(x/2), izmantojot programmu C valodā.
+# 2.Laboratorijas darba aizstāvēšana, "Skaitliskās metodes; Dihotomijas metode"
 
-Darba gaita:
-1.Pēc dotās "Skaitliskās metodes" teorijas, izveidot savai funkcijai aproksimāciju ar summu un to saīsināt pēc rekurences reizinājuma sakarības- Ak = R * Ak-1
+
+## Man piešķirtā funkcija - y(x) = sin(x/2)
+
+
+## Darba mērķis:
+Izpētīt un implementē dihotomijas metodifunkcijai sin(x/2), atrodot funkcijas saknes 
+noteiktā diapazonā ar noteiktu precizitāti, izmantojot programmu C valodā.
+
+
+## Darba gaita:
+
+1.Pēc dotās "Skaitliskās metodes" teorijas, savai funkcijai atrast saknes 
+pēc lietotāja noteikta diapazona, ņemot vērā nobīdi un precizitāti pēc ievades.
 
 2.Uzrakstīt programmu, lai tā uz ekrāna izvada:
 
-1.Summas izteiksmi ar ASCII simbolu palīdzību;
-2.Funkcijas definīcijas apgabala vērtības teksta komentāra veidā;
-3.Rekurences funkcionālā reizinātāja izteiksmi ar ASCII simbolu palīdzību;
-4.Dialogu ar lietotāju x vērtības iegūšanai;
-5.Aprēķinātās summas iepriekšpēdējā locekļa vērtību;
-6.Aprēķinātās summas pēdējā locekļa (piecsimtā locekķa) vērtību;
-7.Funkcijas vērtību f(x), aprēķins izmantojot Teilora rindas izteiksmi;
-8.Funkcijas vērtību f(x), aprēķins izmantojot funkcijas izteiksmi.
-3.Grafiski parādīt funkcijas izmainīšanos ar gnuplot palīdzību
+    1.dialogu ar lietotāju a vērtības iegūšanai
+    2.dialogu ar lietotāju b vērtības iegūšanai
+    3.dialogu ar lietotāju c vērtības iegūšanai
+    4.dialogu ar lietotāju precizitātes vērtības iegūšanai
+    5.aprēķināto x vērtību, kas atbilst f(x)=c vienādojumam, x starp a un b
+    6.aprēķināto f(x) vērtību šim x
+    7.nepieciešamo iterāciju skaitu, lai aprēķinātu šo x vērtību ar uzdoto precizitāti
 
-Risinnāšana un darba izpilde un tās rezultāti:
-Rekurences reizinājuma iegūšana:
 
-Trylor_LD1 jpg
+3.Grafiski parādīt funkciju un funkciju pēc nobīdes ar gnuplot palīdzību
 
-Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
+## Risinnāšana un darba izpilde un tās rezultāti:
 
+Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/2LD_roots/rob_main.c)
+```
 c
 #include <stdio.h>
 #include <math.h>
 
-double mans_sinuss(double x){
-    double a, S;
+int main() {
+    float a, b, bc, ac, nac, nbc, c, x, delta_x, funkca, funkcb, funkcx;
+
+    printf("Ievadiet funkcijas a vertibu:\n");
+    if (scanf("%f", &a) != 1) {
+        printf("ERROR: Netika ievadīts skaitlis!\n");
+        return 1;
+    }
+
+    printf("Ievadiet funkcijas b vertibu:\n");
+    if (scanf("%f", &b) != 1) {
+        printf("ERROR: Netika ievadīts skaitlis!\n");
+        return 1;
+    }
+
+    printf("Ievadiet funkciju nobīdes vertibu, kas nobīdīs abas funkciju, jeb c:\n");
+    if (scanf("%f", &c) != 1) {
+        printf("ERROR: Netika ievadīts skaitlis!\n");
+        return 1;
+    }
+
+    printf("Ievadiet precizitātes vērtību (vēlams, ka līdz 0.0001):\n");
+    if (scanf("%f", &delta_x) != 1) {
+        printf("ERROR: Netika ievadīts skaitlis!\n");
+        return 1;
+    }
+
     int k = 0;
 
-    a = (pow(-1,k)*pow(x,2*k+1))/pow(2,2*k+1); 
-    S = a;
-    
-    //Summas izteiksme
-    printf("k=%2d\t%.2f\t%8.2f\t%8.2f\n", k, x, a, S);
+    funkca = sin(a / 2);
+    funkcb = sin(b / 2);
+    ac = a - c;
+    bc = b - c;
 
-    //Funkcijas definīcijas apgabala vērtības
-    printf("Funkcijas definīcijas apgabala vērtības:\n");
-    printf("x = %.2f\n", x);
-    printf("y = sin(x/2) = %.2f\n", sin(x/2));
-    
-    while (k < 500){
+    if (funkca * funkcb > 0) {
+        printf("Intervālā [%.2f;%.2f] sin(x/2) funkcijai pēc nobīdes %.2f sakņu nav (vai tajā ir pāru sakņu skaits).\n", a, b, c);
+        return 1;
+    }
+
+    printf("Intervālā [%.2f;%.2f] sin(x/2) funkcijai pēc nobīdes %.2f ar precizitāti delta_x=%.4f\n", ac, bc, c, delta_x);
+
+    printf("sin(%7.3f)=%7.3f\t\t\t\t", a, sin(a));
+    printf("sin(%7.3f)=%7.3f\n", b, sin(b));
+
+    while ((b - a) > delta_x) {
         k++;
-        a = a*((-1)*pow(x,2)/((16*pow(k,2)+8*k)));
-        S = S + a;
-        
-        //Summas izteiksme atkal
-        printf("k=%2d\t%.2f\t%8.2f\t%8.2f\n", k, x, a, S);
-    }
-    
-    // 3. Rekurences funkcionālā reizinātāja izteiksmi ar ASCII simbolu palīdzību
-    printf("\nRekurences funkcionālā reizinātāja izteiksmi:\n");
-    printf("a_k = a_(k-1) * ((-1) * x^2) / (16k^2 + 8k)\n");
+        x = (a + b) / 2.0;
 
-    return S;
+        if (funkca * sin(x / 2) > 0)
+            a = x;
+        else
+            b = x;
+
+        printf("%2d. iterācija: sin(%7.3f)=%7.3f\t", k, a, sin(a / 2));
+        printf("sin(%7.3f)=%7.3f\t", x, sin(x / 2));
+        printf("sin(%7.3f)=%7.3f\n", b, sin(b / 2));
     }
 
-    int main(){
-        double x, y, yy;
+    nac = sin((a - c) / 2);
+    nbc = sin((b - c) / 2);
 
-    printf("Ievadiet x vērtību: ");
-    scanf("%lf", &x);
-
-    y = sin(x/2);
-
-   
-    //Aprēķinātās summas pēdējā locekļa (piecsimtā locekķa) vērtība
-    yy = mans_sinuss(x);
-    printf("Aprēķinātās summas pēdējā locekļa vērtība: %.2f\n", yy);
-
-    printf("\nFunkcijas vērtība izmantojot Teilora rindas izteiksmi: %.2f\n", yy);
-
-    printf("Funkcijas vērtība izmantojot sin(x/2): %.2f\n", y);
+    printf("Sakne atrodas pie x=%.3f, jo sin(x/2) ir %.3f pēc nobīdes c=%.3f, ir a=%.3f, b=%.3f ar precizitāti delta_x=%.4f\n", x, sin(x / 2), c, nac, nbc, delta_x);
 
     return 0;
 }
-Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3):
+
+```
+Piebilde: Kods nav kā Ortusā dotais kods, jo šajā kodā ir savienots galvenās funkcijas kods ar nobīdes kodu vienā. 
+Īsāk sakot, divu kodu vietā tika uzrakstīts viens.
+
+
+## Grafiskā attēlošana ar gnuplot 
+(Ir redzami grafiki y = sin(x/2); y = 1; y = sin(x/2)-0.5; y = 0.5; y = 0):
 
 Gnuplot ievade:
+```
+plot [10:-10] sin(x/2)
+replot 1
+replot sin(x/2) - 0.5
+replot 0.5
+replot 0
+```
 
-a0(x) = (pow(-1,0)*pow(x,2*0+1))/pow(2,2*0+1)*(-1) * pow(x,2)/((16*pow(0,2)+8*0))
-a1(x) = (pow(-1,1)*pow(x,2*1+1))/pow(2,2*1+1)*(-1) * pow(x,2)/((16*pow(1,2)+8*1))
-a2(x) = (pow(-1,2)*pow(x,2*2+1))/pow(2,2*2+1)*(-1) * pow(x,2)/((16*pow(2,2)+8*2))
-a3(x) = (pow(-1,3)*pow(x,2*3+1))/pow(2,2*3+1)*(-1) * pow(x,2)/((16*pow(3,2)+8*3))
-
-s0(x) = a0(x)
-s1(x) = a0(x) + a1(x)
-s2(x) = a0(x) + a1(x) + a2(x)
-s3(x) = a0(x) + a1(x) + a2(x) + a3(x)
 Grafiks:
 
-LD1_main_grafiks
+![LD2_grafiks](https://github.com/auzinska/RTR105/blob/main/2LD_roots/LD_2_grafiks.png)
 
-Rezultātu iegūšanas attēlošana:
-Sin(x/2) aprēķināšana:
+## Rezultātu un programmas darbības attēlošana:
 
-Ievadi argumentu: 5
+Vienādojums uz kā tika balstīti programmas aprēķini:
+f(x) = 0∧sgn(f(x+δx)) ̸= sgn(f(x−δx)) => f(x+δx)·f(x−δx) < 0
 
-sin(5/2)=0.60
+### Programmas darbūbas piemērs:
 
-a0 = 2.5 S0 = 2.5
+Piebilde: kods strādā tikai tad, ja decimālskaitļi tiek pierakstīti ar punktu nevis komatu(piem. 4.17 nevis 4,17)
 
-a499 = -0.00 S499 = 0.60
+Ievadde:
 
-a500 = 0.00 S500 = 0.60
+    ievade a = 0
+    ievade b = 4.17
+    ievade c = 0.5
+    ievade precizitāte (delta_x) = 0.001
 
-         500
-        _____
-        \            k    2*k+1 
-          \      (-1) * x
-sin(5/2) = >  _______________________
-          /                  2*k+1
-        /       (2*k+1)! * 2
-        _____
-         k=0
-Rekurences reizinātājs:
+Piemēra darbības attēlojums:
 
-        2
-       X
-________________
-        2
-  16 * k + 8
-Rezultāta piemērs (Koda izvade, ja k iet līdz 5 un x = 5)
+![LD2_Piemers](https://github.com/auzinska/RTR105/blob/main/2LD_roots/LD2_Piemers.png)
 
-teylor_kods_LD1
+Rezultātu iespējamās izvades:
+
+    Sakne atrodas pie x=*aprēķinātā atbilde*, jo sin(x/2) ir *atbilde balstoties
+    uz nobīdi* pēc nobīdes c=*nobīdes vērtība*, ir a=*diapazona sākuma vērtība*, 
+    b=*diapazona beidu vērtība* ar precizitāti delta_x=*precizitātes vērtība*
+
+Ja nav ievadīts sakarīgs skaitlis, vai kāds cits simbols, kas nav skaitlis:
+
+    ERROR: Netika ievadīts skaitlis!
