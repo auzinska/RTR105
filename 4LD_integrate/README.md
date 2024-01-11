@@ -27,7 +27,11 @@ Aprēķināt laukumu grafikam y = sin(x/2) (starp f(x) līknes un x asi) ar inte
 ## Risināšana
 
 Taisnstūra metode:
-![image](https://github.com/auzinska/RTR105/assets/50238747/5b178a5a-2f1a-45e9-a25d-01a40c699312)
+
+Taisnstūra metodei pielietotā sakarība, kur taisnstūra augstums ir funkcijas vērtība un platums ir intervāla garums:
+
+        ![image](https://github.com/auzinska/RTR105/assets/50238747/5b178a5a-2f1a-45e9-a25d-01a40c699312)
+
 
 
 Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
