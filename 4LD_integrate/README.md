@@ -170,23 +170,7 @@ int main() {
     return 0;
 }
 ```
-
-
-
-Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3):
-
-Gnuplot ievade:
-```
-a0(x) = (pow(-1,0)*pow(x,2*0+1))/pow(2,2*0+1)*(-1) * pow(x,2)/((16*pow(0,2)+8*0))
-a1(x) = (pow(-1,1)*pow(x,2*1+1))/pow(2,2*1+1)*(-1) * pow(x,2)/((16*pow(1,2)+8*1))
-a2(x) = (pow(-1,2)*pow(x,2*2+1))/pow(2,2*2+1)*(-1) * pow(x,2)/((16*pow(2,2)+8*2))
-a3(x) = (pow(-1,3)*pow(x,2*3+1))/pow(2,2*3+1)*(-1) * pow(x,2)/((16*pow(3,2)+8*3))
-
-s0(x) = a0(x)
-s1(x) = a0(x) + a1(x)
-s2(x) = a0(x) + a1(x) + a2(x)
-s3(x) = a0(x) + a1(x) + a2(x) + a3(x)
-```
+Programma no lietotāja skatapunkta:
 
 Grafiks:
 
