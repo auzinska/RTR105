@@ -105,7 +105,7 @@ int main()
 
 Koda darbība no lietotāja puses:
 
-![LD3_kodapiemers1](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
+![LD3_kodapiemers1](https://github.com/auzinska/RTR105/blob/main/3LD_derivative/LD3_kodapiemers1.png)
 
 derivative.dat fails pēc programmas izpildes:
 
