@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
+
+//kods ir muļķu drošs :)
+
 double taisnstura_metode(double a, double b, int n) {
     double h = (b - a) / n;
     double integr = 0;
@@ -38,12 +41,29 @@ double simpsona_metode(double a, double b, int n) {
 
 int main() {
     double a, b, eps;
+
     printf("Ievadiet a vērtību (vēlams 0): ");
-    scanf("%lf", &a);
+    if (scanf("%lf", &a) != 1) {
+        printf("ERROR: Ievadiet skaitli!\n");
+        return 1;
+    }
+
     printf("Ievadiet b vērtību (vēlams, kaut ko, kas ir robežās no 0 līdz 2*pi): ");
-    scanf("%lf", &b);
+    if (scanf("%lf", &b) != 1) {
+        printf("ERROR: Ievadiet skaitli!\n");
+        return 1;
+    }
+
     printf("Ievadiet precizitātes (eps) vērtību (vēlams 1e-6): ");
-    scanf("%lf", &eps);
+    if (scanf("%lf", &eps) != 1) {
+        printf("ERROR: Ievadiet skaitli!\n");
+        return 1;
+    }
+
+    if (eps <= 0) {
+        printf("ERROR: Precizitātei jābūt pozitīvai!\n");
+        return 1;
+    }
 
     int n = 2;
     double integr_taisnstura, integr_trapeces, integr_simpsona;
@@ -59,6 +79,7 @@ int main() {
         }
         integr_taisnstura = integr_taisnstura_new;
     }
+    printf("Elementu skaits - %d) Integrāļa vērtība ar taisnstūra metodi: %.6f\n", n, integr_taisnstura);
 
     // Trapeces metode
     n = 2;
@@ -72,6 +93,7 @@ int main() {
         }
         integr_trapeces = integr_trapeces_new;
     }
+    printf("Elementu skaits - %d) Integrāļa vērtība ar trapeces metodi: %.6f\n", n, integr_trapeces);
 
     // Simpsona metode
     n = 2;
@@ -85,10 +107,7 @@ int main() {
         }
         integr_simpsona = integr_simpsona_new;
     }
-
-    printf("Integrāļa vērtība ar taisnstūra metodi: %.6f\n", integr_taisnstura);
-    printf("Integrāļa vērtība ar trapeces metodi: %.6f\n", integr_trapeces);
-    printf("Integrāļa vērtība ar Simpsona metodi: %.6f\n", integr_simpsona);
+    printf("Elementu skaits - %d) Integrāļa vērtība ar Simpsona metodi: %.6f\n", n, integr_simpsona);
 
     return 0;
 }
