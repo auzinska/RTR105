@@ -105,6 +105,10 @@ int main()
 
 Koda darbība no lietotāja puses:
 
+    !!piebilde!!: kods strādā tikai tad, ja ievadē decimālskaitļi ir atdalīti tikai ar punktu (piem. 6.28, nevis 6,28)
+
+Rezultāta piemērs (Koda izvade, ja a = 0; b = 6.28 (2* 3.14); precizitāte = 0.001)
+
 ![LD3_kodapiemers1](https://github.com/auzinska/RTR105/blob/main/3LD_derivative/LD3_kodapiemers1.png)
 
 derivative.dat fails pēc programmas izpildes:
@@ -126,43 +130,7 @@ replot "derivative.dat" every ::1 using 1:6 with lines title "sin''(x/2) (finite
 
 Grafiks:
 
-![LD1_main_grafiks](https://github.com/auzinska/RTR105/blob/main/3LD_derivative/LD3_grafiks.png)
+![LD3_LD3_grafiks](https://github.com/auzinska/RTR105/blob/main/3LD_derivative/LD3_grafiks.png)
 
-## Rezultātu iegūšanas attēlošana:
 
-Sin(x/2) aprēķināšana:
 
-Ievadi argumentu: 5
-
-sin(5/2)=0.60
-
-a0 = 2.5 
-S0 = 2.5
-
-a499 = -0.00
-S499 = 0.60
-
-a500 = 0.00
-S500 = 0.60
-```         
-         500
-        _____
-        \            k    2*k+1 
-          \      (-1) * x
-sin(5/2) = >  _______________________
-          /                  2*k+1
-        /       (2*k+1)! * 2
-        _____
-         k=0
-```
-Rekurences reizinātājs: 
-```
-        2
-       X
-________________
-        2
-  16 * k + 8
-```
-Rezultāta piemērs (Koda izvade, ja k iet līdz 5 un x = 5)
-
-![teylor_kods_LD1](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
