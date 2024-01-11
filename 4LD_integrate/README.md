@@ -170,13 +170,13 @@ int main() {
     return 0;
 }
 ```
-Programma no lietotāja skatapunkta:
+Programma no lietotāja skatapunkta (ievade: a = 0; b = 6.28 (2*3.14); precizitāte = 0.000001):
 
-Grafiks:
+Piebilde: lai rezultāti būtu precīzi, precizitātei ir jābūt vismaz 1e-6. Kā arī kods strādās tikai vienīgi tad, ja ievadē decimālskaitļi ir pierakstīti ar punktu, nevis ar komatu (piem. 6.28, nevis 6,28)
 
-![LD1_main_grafiks](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
+![LD4_Kodapiemers1](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/LD4_kodapiemers1.png)
 
-## Rezultātu iegūšanas attēlošana:
+## Rezultātu pierādīšana ar Wolpramalpha
 
 Sin(x/2) aprēķināšana:
 
