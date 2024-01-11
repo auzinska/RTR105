@@ -178,7 +178,8 @@ Piebilde: lai rezultāti būtu precīzi, precizitātei ir jābūt vismaz 1e-6. K
 
 ## Rezultātu pierādīšana ar Wolpramalpha
 
-![LD4_Kodapiemers1](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/LD4_kodapiemers1.png)
+![int_b=2pi](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/LD4_kodapiemers1.png)
 
-![LD4_Kodapiemers1](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/LD4_kodapiemers1.png)
+![int_b=4pi](https://github.com/auzinska/RTR105/blob/main/4LD_integrate/int_b%3D4pi.png)
+
 
