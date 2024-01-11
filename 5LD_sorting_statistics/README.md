@@ -44,124 +44,82 @@ void karto_alfabeta_seciba(char *simboli, int garums) {
                 simboli[i] = simboli[j];
                 simboli[j] = temp;
 ```
-Šī risinājuma pilnais kods (atrodams github:)
+Šī risinājuma pilnais kods c valodā (atrodams github: https://github.com/auzinska/RTR105/blob/main/5LD_sorting_statistics/sort.c):
 
-![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
-
-Kods c valodā (Atrodams: https://github.com/auzinska/RTR105/blob/main/1LD_series/main_fun.c)
 ```
-c
 #include <stdio.h>
-#include <math.h>
+#include <string.h>
+#include <stdlib.h>
 
-double mans_sinuss(double x){
-    double a, S;
-    int k = 0;
-
-    a = (pow(-1,k)*pow(x,2*k+1))/pow(2,2*k+1); 
-    S = a;
-    
-    //Summas izteiksme
-    printf("k=%2d\t%.2f\t%8.2f\t%8.2f\n", k, x, a, S);
-
-    //Funkcijas definīcijas apgabala vērtības
-    printf("Funkcijas definīcijas apgabala vērtības:\n");
-    printf("x = %.2f\n", x);
-    printf("y = sin(x/2) = %.2f\n", sin(x/2));
-    
-    while (k < 500){
-        k++;
-        a = a*((-1)*pow(x,2)/((16*pow(k,2)+8*k)));
-        S = S + a;
-        
-        //Summas izteiksme atkal
-        printf("k=%2d\t%.2f\t%8.2f\t%8.2f\n", k, x, a, S);
+// Kārtošana
+void karto_alfabeta_seciba(char *simboli, int garums) {
+    for (int i = 0; i < garums - 1; i++) {
+        for (int j = i + 1; j < garums; j++) {
+            if (simboli[i] > simboli[j]) {
+                // Samaina vietām, ja nepieciešams
+                char temp = simboli[i];
+                simboli[i] = simboli[j];
+                simboli[j] = temp;
+            }
+        }
     }
-    
-    // 3. Rekurences funkcionālā reizinātāja izteiksmi ar ASCII simbolu palīdzību
-    printf("\nRekurences funkcionālā reizinātāja izteiksmi:\n");
-    printf("a_k = a_(k-1) * ((-1) * x^2) / (16k^2 + 8k)\n");
+}
 
-    return S;
+int main() {
+    // ieevade
+    char rinda[6];  // Ievadīsim precīzi 5 simbolus
+    printf("Ievadiet 5 simbolus: ");
+    fgets(rinda, sizeof(rinda), stdin);
+
+    // Min MAX
+    int min = rinda[0], max = rinda[0], sum = rinda[0];
+    for (int i = 1; i < 5; i++) {
+        sum += rinda[i];
+        if (rinda[i] < min) min = rinda[i];
+        if (rinda[i] > max) max = rinda[i];
+    }
+    double videja = (double)sum / 5;
+
+    // mediānaa
+    karto_alfabeta_seciba(rinda, 5);
+    char mediana = rinda[2];
+
+    // moda
+    int modes[256] = {0}; // Lai nav liekas galvas sāpes, pieņemsim, ka ASCII simbolu diapazons ir no 0 līdz 255
+    for (int i = 0; i < 5; i++) {
+        modes[rinda[i]]++;
+    }
+    int moda = 0;
+    char moda_simbols;
+    for (int i = 0; i < 256; i++) {
+        if (modes[i] > moda) {
+            moda = modes[i];
+            moda_simbols = (char)i;
+        }
     }
 
-    int main(){
-        double x, y, yy;
+    // rez
+    printf("Minimālā vērtība (ASCII): %d (%c)\n", min, min);
+    printf("Maksimālā vērtība (ASCII): %d (%c)\n", max, max);
+    printf("Vidējā vērtība (ASCII): %.2f\n", videja);
+    printf("Mediānas vērtība (ASCII): %d (%c)\n", mediana, mediana);
+    printf("Modas vērtība (ASCII): %d (%c)\n", moda_simbols, moda_simbols);
 
-    printf("Ievadiet x vērtību: ");
-    scanf("%lf", &x);
-
-    y = sin(x/2);
-
-   
-    //Aprēķinātās summas pēdējā locekļa (piecsimtā locekķa) vērtība
-    yy = mans_sinuss(x);
-    printf("Aprēķinātās summas pēdējā locekļa vērtība: %.2f\n", yy);
-
-    printf("\nFunkcijas vērtība izmantojot Teilora rindas izteiksmi: %.2f\n", yy);
-
-    printf("Funkcijas vērtība izmantojot sin(x/2): %.2f\n", y);
+    // alfabēta secībā kārto
+    karto_alfabeta_seciba(rinda, 5);
+    printf("Sakārtotie simboli: %s\n", rinda);
 
     return 0;
 }
+
 ```
 
+Risinājuma kods, kur iegūtās vērtības tiek automātiski sūtītas uz gnuplot (atrodams github: ):
+
+![Trylor_LD1 jpg](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
 
 
-Grafiskā attēlošana ar gnuplot (Ir redzami grafiki sin(x/2); S0; S1; S2; S3):
 
-Gnuplot ievade:
-```
-a0(x) = (pow(-1,0)*pow(x,2*0+1))/pow(2,2*0+1)*(-1) * pow(x,2)/((16*pow(0,2)+8*0))
-a1(x) = (pow(-1,1)*pow(x,2*1+1))/pow(2,2*1+1)*(-1) * pow(x,2)/((16*pow(1,2)+8*1))
-a2(x) = (pow(-1,2)*pow(x,2*2+1))/pow(2,2*2+1)*(-1) * pow(x,2)/((16*pow(2,2)+8*2))
-a3(x) = (pow(-1,3)*pow(x,2*3+1))/pow(2,2*3+1)*(-1) * pow(x,2)/((16*pow(3,2)+8*3))
-
-s0(x) = a0(x)
-s1(x) = a0(x) + a1(x)
-s2(x) = a0(x) + a1(x) + a2(x)
-s3(x) = a0(x) + a1(x) + a2(x) + a3(x)
-```
-
-Grafiks:
-
-![LD1_main_grafiks](https://github.com/auzinska/RTR105/assets/50238747/55ca2afb-8dcd-4d8e-b8ab-011ff96bcfa3)
-
-## Rezultātu iegūšanas attēlošana:
-
-Sin(x/2) aprēķināšana:
-
-Ievadi argumentu: 5
-
-sin(5/2)=0.60
-
-a0 = 2.5 
-S0 = 2.5
-
-a499 = -0.00
-S499 = 0.60
-
-a500 = 0.00
-S500 = 0.60
-```         
-         500
-        _____
-        \            k    2*k+1 
-          \      (-1) * x
-sin(5/2) = >  _______________________
-          /                  2*k+1
-        /       (2*k+1)! * 2
-        _____
-         k=0
-```
-Rekurences reizinātājs: 
-```
-        2
-       X
-________________
-        2
-  16 * k + 8
-```
 Rezultāta piemērs (Koda izvade, ja k iet līdz 5 un x = 5)
 
 ![teylor_kods_LD1](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
