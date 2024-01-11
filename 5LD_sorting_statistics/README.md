@@ -207,14 +207,10 @@ int main() {
 
 ```
 
-Programmas darbība no lietotāja puses ar automātisko gnuplot ievadi:
+Programmas darbība no lietotāja puses ar automātisko gnuplot ievadi (ievade: 115ab):
 
 ![LD5_Kodapiemers_ar_gnuplot_pats_kods](https://github.com/auzinska/RTR105/blob/main/5LD_sorting_statistics/LD5_Kodapiemers_ar_gnuplot_pats_kods.png)
 
-Gnuplot:
+Gnuplot (Histogrammā tiek parādīts elementu skaits atkarībā no tā atrašanās vietas asci secībā (no 0-255)):
 
-![LD5_GNUPLOT](https://github.com/auzinska/RTR105/assets/50238747/1bd3626f-4daf-432d-bf3a-470b0a266c2d)
-
-Rezultāta piemērs (Koda izvade, ja k iet līdz 5 un x = 5)
-
-![teylor_kods_LD1](https://github.com/auzinska/RTR105/assets/50238747/fead361d-c57a-423b-bcc6-357e1c07b8d4)
+![LD5_GNUPLOT](https://github.com/auzinska/RTR105/blob/main/5LD_sorting_statistics/LD5_GNUPLOT.png)
